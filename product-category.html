@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Product Category</title>
+
+	<!-- Jquery -->
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/jquery-3.3.1.min.js"></script>
+
+	<!-- Bootstrap 4 -->
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<script src="./js/popper.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+
+	<link href="./css/fontello.css" rel="stylesheet">
+	<link href="./css/font-awesome.min.css" rel="stylesheet" />
+
+	<!-- Slider -->
+	<link href="./css/flickity.css" rel="stylesheet" media="screen">
+	<script src="./js/flickity.min.js"></script>
+
+	<!-- Megamenu -->
+	<link href="./css/slider-menu.css" rel="stylesheet" type="text/css" />
+	<link href="./css/megamenu.css" rel="stylesheet" type="text/css" />
+	<script src="./js/jquery.menu-aim.js"></script>
+	<script src="./js/webslidemenu.js"></script>
+
+	<!-- Zoom -->
+	<script src="./js/jquery.elevatezoom.min.js"></script>
+
+	<!-- Custom -->
+	<link href="./css/style.css" rel="stylesheet">
+	<script src="./js/js-custom.js" type="text/javascript"></script>
+
+</head>
+
+<body class="product-category-view">
+	<!-- Header -->
+	<header id="header">
+		<div class="header">
+			<div class="header-main">
+				<div class="wsmainfull clearfix">
+					<div class="wsmainwp clearfix">
+						<div class="float-left header-left">
+							<div class="float-left logo">
+								<a href="/" title="Demo - Hệ thống bán lẻ điện thoại">
+									<img src="./images/logo.jpg" alt="Demo - Hệ thống bán lẻ điện thoại"></a>
+							</div>
+							<div class="float-left x-search">
+								<div class="float-left" style="padding: 9px 0px;">
+									<div class="btn-group">
+										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+											aria-haspopup="true" aria-expanded="false" style="padding: 6px 5px 6px 8px !important;">
+											Hà Nội
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a href="#">
+													<i class="fa fa-map-marker"></i> Hà Nội
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fa fa-map-marker"></i> Hồ Chí Minh
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<form id="search_mini_form" action="" method="get">
+									<div class="form-search">
+										<label for="search">Search:</label>
+										<input id="search" type="text" name="q" value="" class="input-text" maxlength="128">
+										<button type="submit">
+											<i class="fa fa-search"></i>
+										</button>
+										<div id="search_autocomplete" class="search-autocomplete" style="display: none;"></div>
+									</div>
+								</form>
+							</div>
+
+						</div>
+
+						<div class="wsmobileheader clearfix ">
+							<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+						</div>
+
+						<!--Main Menu HTML Code-->
+						<nav class="wsmenu clearfix">
+							<div class="overlapblackbg"></div>
+							<ul class="wsmenu-list">
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-mobile fa-2x"></i>Điện thoại<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Apple</h3>
+														<ul>
+															<li><a href="#">iPhone XS</a></li>
+															<li><a href="#">iPhone XS Max</a></li>
+															<li><a href="#">iPhone XR</a></li>
+															<li><a href="#">iPhone X</a></li>
+															<li><a href="#">iPhone 8 | 8 Plus</a></li>
+															<li><a href="#">iPhone 7 | 7 Plus</a></li>
+															<li><a href="#">iPhone 6S | 6S Plus</a></li>
+														</ul>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Samsung</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Huawei</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Xiaomi</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">OPPO</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Nokia</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">ASUS</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Realme</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Vsmart</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Hãng khác</h3>
+														<ul>
+															<li><a href="#">Pocophone</a></li>
+															<li><a href="#">Honor</a></li>
+															<li><a href="#">BlackBerry</a></li>
+															<li><a href="#">BKAV Bphone</a></li>
+															<li><a href="#">Sharp</a></li>
+														</ul>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Tin đồn - Mới ra</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Xem tất cả</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-tablet fa-2x"></i>Tablet<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad Pro</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad Air</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad 9.7</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad mini</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Huawei</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-refresh fa-2x"></i>Hàng cũ<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Apple</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad Air</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad 9.7</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad mini</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Huawei</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-refresh fa-2x"></i>Phụ kiện<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Apple</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad Air</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad 9.7</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad mini</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Huawei</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-music  fa-2x"></i>Đồ chơi<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Apple</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad Air</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad 9.7</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad mini</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Huawei</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-music  fa-2x"></i>Âm thanh<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Apple</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad Air</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad 9.7</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad mini</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Huawei</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-laptop fa-2x"></i>Laptop<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">MacBook</h3>
+														<ul>
+															<li><a href="#">Macbook Pro 2018</a></li>
+															<li><a href="#">Macbook Air 2018</a></li>
+															<li><a href="#">MacBook 2017</a></li>
+															<li><a href="#">MacBook Pro 2017</a></li>
+															<li><a href="#">MacBook 2016</a></li>
+															<li><a href="#">MacBook Pro 2016</a></li>
+															<li><a href="#">MacBook Air 2017</a></li>
+														</ul>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Dell</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">HP</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true"><a href="#"><i class="fa fa-gift fa-2x"></i>Trả góp<span
+											class="wsarrow"></span></a></li>
+								<li aria-haspopup="true"><a href="#"><i class="fa fa-gift fa-2x"></i>Sửa chữa<span
+											class="wsarrow"></span></a>
+									<ul class="sub-menu">
+										<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Website Design </a></li>
+										<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Ecommerce Solutions</a></li>
+										<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Application Development</a>
+										</li>
+										<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Website Development</a></li>
+										<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Open Source Development</a>
+											<ul class="sub-menu">
+												<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Submenu item 1</a></li>
+												<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Submenu item 2</a></li>
+												<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Submenu item 3</a></li>
+												<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Submenu item 4</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li aria-haspopup="true"><a href="#"><i class="fa fa-gift fa-2x"></i>Khuyến mãi<span
+											class="wsarrow"></span></a></li>
+								<li aria-haspopup="true"><a href="#"><i class="fa fa-gift fa-2x"></i>Công nghệ<span
+											class="wsarrow"></span></a></li>
+								<li aria-haspopup="true"><a href="#"><i class="fa fa-gift fa-2x"></i>Ưu đãi đối tác<span
+											class="wsarrow"></span></a></li>
+
+							</ul>
+						</nav>
+						<!--Menu HTML Code-->
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</header>
+	<!-- End Header -->
+
+	<!--  main -->
+	<main id="main">
+	
+		<section class="awe-section-1 mb-2">
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+						<li class="home">
+							<a href="/" title="Go to Home Page">Home</a>
+						<i class="fa fa-angle-right"></i>
+						</li>
+						<li class="category3">
+							<a href="#" title="">Điện thoại</a>
+						<i class="fa fa-angle-right"></i>
+						</li>
+						<li class="category132">Apple</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	
+		<section class="awe-section-2 mb-2">
+			<section class="section-slider-pro">
+				<div class="container">
+					<div class="carousel pb-3" data-flickity=' {"imagesLoaded": true, "groupCells": "100%", "dragThreshold" : 2, "cellAlign": "left","wrapAround": true,"prevNextButtons": true,"percentPosition": true,"pageDots": true, "rightToLeft": false, "autoPlay" : false}'>
+						<div class="carousel-cell pl-sm-0 col-md-6 col-sm-12">
+						<div class="col-inner">
+							<a class="avt" href="" target="_blank">
+								<img src="images/bn1.jpg">
+							</a>
+						</div>
+					</div>
+					<div class="carousel-cell pl-sm-0 col-md-6 col-sm-12">
+						<div class="col-inner">
+							<a class="avt" href="" target="_blank">
+								<img src="images/bn2.jpg">
+							</a>
+						</div>
+					</div>
+					<div class="carousel-cell pl-sm-0 col-md-6 col-sm-12">
+						<div class="col-inner">
+							<a class="avt" href="" target="_blank">
+								<img src="images/bn3.jpg">
+							</a>
+						</div>
+					</div>
+				</div>
+				</div>
+			</section>
+		</section>
+
+		<section class="awe-section-3 mb-4">
+			<section class="section-product">
+			    <div class="products-container">
+				    <div class="container">
+					<div class="row">
+						<div class="col-md-2 col-sm-12">
+							<div class="sidebar">﻿
+								<div class="block block-layered-nav">
+									<div class="block-content">
+										<div id="narrow-by-list">
+											<div class="last-odd mb-3">
+												<h4>Phiên bản</h4>
+												<div class="even-odd">
+													<ul id="filter-list">
+														<li><a class="multi-select isselected color-red" href="">Tất cả</a></li>
+														<li><a class="multi-select unselected" href="">iPhone XS | XS Max</a></li>
+														<li><a class="multi-select unselected" href="">iPhone XR</a></li>
+														<li><a class="multi-select unselected" href="">iPhone X</a></li>
+														<li><a class="multi-select unselected" href="">iPhone 8 | 8 Plus</a></li>
+														<li><a class="multi-select unselected" href="">iPhone 7 | 7 Plus</a></li>
+														<li><a class="multi-select unselected" href="">iPhone 6S | 6S Plus</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="last-odd mb-3">
+												<h4>Màn hình</h4>
+												<div class="even-odd">
+													<ul id="filter-list">
+														<li><a class="multi-select isselected color-red" href="">Tất cả</a></li>
+														<li><a class="multi-select unselected" href="">&lt; 5 inches</a></li>
+														<li><a class="multi-select unselected" href="">Từ 5.5 đến 6 inches</a></li>
+														<li><a class="multi-select unselected" href="">&gt;= 6 inches</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="last-odd mb-3">
+												<h4>Bộ nhớ trong</h4>
+												<div class="even-odd">
+													<ul id="filter-list">
+														<li><a class="multi-select isselected color-red" href="">Tất cả</a></li>
+														<li><a class="multi-select unselected" href="">512 GB</a></li>
+														<li><a class="multi-select unselected" href="">256 GB</a></li>
+														<li><a class="multi-select unselected" href="">128 GB</a></li>
+														<li><a class="multi-select unselected" href="">64 GB</a></li>
+														<li<a class="multi-select unselected" href="">32 GB</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="last-odd mb-3">
+												<h4>Sim</h4>
+												<div class="even-odd">
+													<ul id="filter-list">
+														<li><a class="multi-select isselected color-red" href="">Tất cả</a></li>
+														<li><a class="multi-select unselected" href="">1 Sim</a></li>
+														<li><a class="multi-select unselected" href="">2 Sim</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="last-odd mb-2">
+												<h4>Hệ điều hành</h4>
+												<div class="even-odd">
+													<ul id="filter-list">
+														<li><a class="multi-select isselected color-red" href="">Tất cả</a></li>
+														<li><a class="multi-select unselected" href="">iOS</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-md-10 col-sm-12">
+							<div class="module el-product-group">
+								<div class="lt-product-group">
+									<div class="section-header header-product-category">
+										<div class="title-product-category">
+											<h1 class="font-weight-bold">
+												Phụ kiện
+											</h1>
+										</div>
+										<div class="float-left fil-product-category">
+											<a class="btn btn-default btn-sm" href="#">Pin dự phòng</a>
+											<a class="btn btn-default btn-sm" href="#">Ốp lưng</a>
+											<a class="btn btn-default btn-sm" href="#">Cáp sạc</a>
+											<a class="btn btn-default btn-sm" href="#">Sim Thẻ</a>
+											<a class="btn btn-default btn-sm" href="#">Thẻ nhớ</a>
+											<a class="btn btn-default btn-sm" href="#">Dán màn hình</a>
+											<a class="btn btn-default btn-sm" href="#">Chuột</a>
+											<a class="btn btn-default btn-sm" href="#">Gaming Gear</a>
+											<a class="btn btn-default btn-sm" href="#">Gia đình</a>
+										</div>
+										<div class="clear"></div>
+									</div>
+									<div class="list-products">
+									
+										<div class="product-group">
+											<div class="float-left">
+												<ul class="price-filter-link">
+													<li><strong>Chọn mức giá: </strong></li>
+													<li><a href="">Dưới 3 triệu</a></li>
+													<li><a href="">Từ 12 triệu - 15 triệu</a></li>
+													<li><a href="">Từ 15 triệu - 18 triệu</a></li>
+													<li><a href="">Từ 18 triệu - 21 triệu</a></li>
+													<li><a href="">Trên 24 triệu</a></li> 
+												</ul>
+											</div>
+											<div class="float-right">
+												<div class="dropdown sort-by">
+													<button class="btn btn-primary dropdown-toggle" type="button" id="store-b" data-toggle="dropdown"
+														aria-haspopup="true" aria-expanded="false">
+														Xem nhiều : từ cao tới thấp
+													</button>
+													<div class="dropdown-menu" aria-labelledby="about-us">
+														<a class="dropdown-item" href="#">Giá</a>
+														<a class="dropdown-item" href="#">Xem nhiều</a>
+														<a class="dropdown-item" href="#">Mới nhất</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row cols-5">
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/iphone-6s-plus-gold_5.jpg">
+														</a>
+														<div class="sticker-vna">
+															<img src="images/iconvna.png">
+														</div>
+														<div class="tra-gop-0">
+															<span class="text-tra-gop-0">Trả góp 0%</span>
+														</div>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="">
+															<h3>Apple iPhone 7 Plus 32GB Chính hãng (Mã VN/A)</h3>
+														</a>
+														<div class="price-box">
+															<span class="regular-price">
+																<span class="price">13.790.000&nbsp;₫</span>
+															</span>
+														</div>
+														<div class="clear"></div>
+														<div class="promotion">
+															<div class="promo-list">
+																<ul>
+																	<li class="pmh-title">Giảm thêm</li>
+																	<li class="pmh-content">790.000&nbsp;₫</li>
+																</ul>
+															</div>
+															<p class="coupon-price">Giảm thêm 790.000&nbsp;₫ và
+																<b>2 km</b> khác
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/iphone-7-plus-silver_3_2_1_1.jpg">
+														</a>
+														<div class="sticker-vna">
+															<img src="images/iconvna.png">
+														</div>
+														<div class="tra-gop-0">
+															<span class="text-tra-gop-0">Trả góp 0%</span>
+														</div>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="">
+															<h3>Apple iPhone 6S Plus 32GB Chính hãng (mã VN/A)</h3>
+														</a>
+														<div class="price-box">
+															<span class="regular-price">
+																<span class="price">10.290.000&nbsp;₫</span>
+															</span>
+														</div>
+														<div class="clear"></div>
+														<div class="promotion">
+															<div class="promo-list">
+																<ul>
+																	<li class="pmh-title">Giảm thêm</li>
+																	<li class="pmh-content">790.000&nbsp;₫</li>
+																</ul>
+															</div>
+															<p class="coupon-price">Giảm thêm 790.000&nbsp;₫ và
+																<b>2 km</b> khác
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/samsung-galaxy-m20-m205f-1_1_2.jpg">
+														</a>
+														<div class="sticker-vna">
+															<img src="images/iconvna.png">
+														</div>
+														<div class="tra-gop-0">
+															<span class="text-tra-gop-0">Trả góp 0%</span>
+														</div>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="">
+															<h3>Samsung Galaxy M20</h3>
+														</a>
+														<div class="price-box">
+															<span class="regular-price">
+																<span class="price">4.990.000&nbsp;₫</span>
+															</span>
+														</div>
+														<div class="clear"></div>
+														<div class="promotion">
+															<div class="promo-list">
+																<ul>
+																	<li class="pmh-title">PMH</li>
+																	<li class="pmh-content">400.000&nbsp;₫</li>
+																</ul>
+															</div>
+															<p class="coupon-price">Tặng Phiếu mua hàng 400.000&nbsp;₫ và
+																<b>1 km</b> khác
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/galaxy-s10-plus_design_colors_prism-green11_zoom.jpg"
+																style="display: block;margin: 10px auto 0px;">
+														</a>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="">
+															<h3>Samsung Galaxy S10+ (Plus)</h3>
+														</a>
+														<div class="price-box">
+															<span class="regular-price">
+																<span class="price">22.990.000&nbsp;₫</span>
+															</span>
+														</div>
+														<div class="clear"></div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/a7_xanh.jpg" >
+														</a>
+														<div class="sticker-vna">
+															<img src="images/iconvna.png">
+														</div>
+														<div class="tra-gop-0">
+															<span class="text-tra-gop-0">Trả góp 0%</span>
+														</div>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="">
+															<h3>Samsung Galaxy A7 (2018)</h3>
+														</a>
+														<div class="price-box">
+															<p class="old-price">
+																<span class="price">6.990.000&nbsp;₫</span>
+															</p>
+															<p class="special-price">
+																<span class="price">5.650.000&nbsp;₫</span>
+															</p>
+														</div>
+														<div class="clear"></div>
+														<div class="promotion">
+															<p class="gift-cont">Trả góp lãi suất 0% với Home Credit. Trả trước 30%, kỳ hạn 4 tháng (Áp
+																dụng cùng các khuyến mại khác) và
+																<b>1 km</b> khác
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/s9plus-purple_1.jpg">
+														</a>
+														<div class="giam-percent">
+															<span class="text-giam-percent">Giảm 29%</span>
+														</div>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="https://cellphones.com.vn/samsung-galaxy-s9plus-chinh-hang.html">
+															<h3>Samsung Galaxy S9+ (Plus) 64GB</h3>
+														</a>
+														<div class="price-box">
+															<p class="old-price">
+																<span class="price">19.990.000&nbsp;₫</span>
+															</p>
+															<p class="special-price">
+																<span class="price">14.090.000&nbsp;₫</span>
+															</p>
+														</div>
+														<div class="clear"></div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/j4_den_1.jpg" style="display: block;margin: 10px auto 0px;">
+														</a>
+														<div class="sticker-vna">
+															<img src="images/iconvna.png">
+														</div>
+														<div class="tra-gop-0">
+															<span class="text-tra-gop-0">Trả góp 0%</span>
+														</div>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="">
+															<h3>Samsung Galaxy Note 9</h3>
+														</a>
+														<div class="price-box">
+															<p class="old-price">
+																<span class="price">22.990.000&nbsp;₫</span>
+															</p>
+															<p class="special-price">
+																<span class="price">17.490.000&nbsp;₫</span>
+															</p>
+														</div>
+														<div class="clear"></div>
+														<div class="promotion">
+															<p class="gift-cont">Trả góp lãi suất 0% với Home Credit. Trả trước 20%, kỳ hạn 6 tháng (Áp
+																dụng cùng các khuyến mại khác)</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/a3s-purple.jpg">
+														</a>
+														<div class="sticker-vna">
+															<img src="images/iconvna.png">
+														</div>
+														<div class="tra-gop-0">
+															<span class="text-tra-gop-0">Trả góp 0%</span>
+														</div>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="https://cellphones.com.vn/dien-thoai-sharp-a2.html">
+															<h3>Sharp A2</h3>
+														</a>
+														<div class="price-box">
+															<p class="old-price">
+																<span class="price">2.990.000&nbsp;₫</span>
+															</p>
+															<p class="special-price">
+																<span class="price">2.490.000&nbsp;₫</span>
+															</p>
+														</div>
+														<div class="clear"></div>
+														<div class="promotion">
+															<p class="gift-cont"> và
+																<b>1 km</b> khác
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/2343b9f9dcc45647a63d493505a1d624.jpg">
+														</a>
+														<div class="sticker-hotsale">
+															<img src="images/iconsale.png" />
+														</div>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="">
+															<h3>Huawei Y7 Pro 2019</h3>
+														</a>
+														<div class="price-box">
+															<span class="regular-price">
+																<span class="price">3.790.000&nbsp;₫</span>
+															</span>
+														</div>
+														<div class="clear"></div>
+														<div class="promotion">
+															<p class="gift-cont">Trả góp lãi suất 0% với Home Credit. Trả trước 30%, kỳ hạn 4 tháng (Áp
+																dụng cùng các khuyến mại khác) và
+																<b>1 km</b> khác
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/galaxy-note-9-bronze.jpg">
+														</a>
+														<div class="sticker-vna">
+															<img src="images/iconvna.png">
+														</div>
+														<div class="tra-gop-0">
+															<span class="text-tra-gop-0">Trả góp 0%</span>
+														</div>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="">
+															<h3>OPPO A3s 16GB</h3>
+														</a>
+														<div class="price-box">
+															<span class="regular-price">
+																<span class="price">3.290.000&nbsp;₫</span>
+															</span>
+														</div>
+														<div class="clear"></div>
+														<div class="promotion"></div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/iphone-6s-plus-gold_5.jpg">
+														</a>
+														<div class="sticker-vna">
+															<img src="images/iconvna.png">
+														</div>
+														<div class="tra-gop-0">
+															<span class="text-tra-gop-0">Trả góp 0%</span>
+														</div>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="">
+															<h3>Apple iPhone 7 Plus 32GB Chính hãng (Mã VN/A)</h3>
+														</a>
+														<div class="price-box">
+															<span class="regular-price">
+																<span class="price">13.790.000&nbsp;₫</span>
+															</span>
+														</div>
+														<div class="clear"></div>
+														<div class="promotion">
+															<div class="promo-list">
+																<ul>
+																	<li class="pmh-title">Giảm thêm</li>
+																	<li class="pmh-content">790.000&nbsp;₫</li>
+																</ul>
+															</div>
+															<p class="coupon-price">Giảm thêm 790.000&nbsp;₫ và
+																<b>2 km</b> khác
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/iphone-7-plus-silver_3_2_1_1.jpg">
+														</a>
+														<div class="sticker-vna">
+															<img src="images/iconvna.png">
+														</div>
+														<div class="tra-gop-0">
+															<span class="text-tra-gop-0">Trả góp 0%</span>
+														</div>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="">
+															<h3>Apple iPhone 6S Plus 32GB Chính hãng (mã VN/A)</h3>
+														</a>
+														<div class="price-box">
+															<span class="regular-price">
+																<span class="price">10.290.000&nbsp;₫</span>
+															</span>
+														</div>
+														<div class="clear"></div>
+														<div class="promotion">
+															<div class="promo-list">
+																<ul>
+																	<li class="pmh-title">Giảm thêm</li>
+																	<li class="pmh-content">790.000&nbsp;₫</li>
+																</ul>
+															</div>
+															<p class="coupon-price">Giảm thêm 790.000&nbsp;₫ và
+																<b>2 km</b> khác
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/samsung-galaxy-m20-m205f-1_1_2.jpg">
+														</a>
+														<div class="sticker-vna">
+															<img src="images/iconvna.png">
+														</div>
+														<div class="tra-gop-0">
+															<span class="text-tra-gop-0">Trả góp 0%</span>
+														</div>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="">
+															<h3>Samsung Galaxy M20</h3>
+														</a>
+														<div class="price-box">
+															<span class="regular-price">
+																<span class="price">4.990.000&nbsp;₫</span>
+															</span>
+														</div>
+														<div class="clear"></div>
+														<div class="promotion">
+															<div class="promo-list">
+																<ul>
+																	<li class="pmh-title">PMH</li>
+																	<li class="pmh-content">400.000&nbsp;₫</li>
+																</ul>
+															</div>
+															<p class="coupon-price">Tặng Phiếu mua hàng 400.000&nbsp;₫ và
+																<b>1 km</b> khác
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/galaxy-s10-plus_design_colors_prism-green11_zoom.jpg"
+																style="display: block;margin: 10px auto 0px;">
+														</a>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="">
+															<h3>Samsung Galaxy S10+ (Plus)</h3>
+														</a>
+														<div class="price-box">
+															<span class="regular-price">
+																<span class="price">22.990.000&nbsp;₫</span>
+															</span>
+														</div>
+														<div class="clear"></div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/a7_xanh.jpg" >
+														</a>
+														<div class="sticker-vna">
+															<img src="images/iconvna.png">
+														</div>
+														<div class="tra-gop-0">
+															<span class="text-tra-gop-0">Trả góp 0%</span>
+														</div>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="">
+															<h3>Samsung Galaxy A7 (2018)</h3>
+														</a>
+														<div class="price-box">
+															<p class="old-price">
+																<span class="price">6.990.000&nbsp;₫</span>
+															</p>
+															<p class="special-price">
+																<span class="price">5.650.000&nbsp;₫</span>
+															</p>
+														</div>
+														<div class="clear"></div>
+														<div class="promotion">
+															<p class="gift-cont">Trả góp lãi suất 0% với Home Credit. Trả trước 30%, kỳ hạn 4 tháng (Áp
+																dụng cùng các khuyến mại khác) và
+																<b>1 km</b> khác
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/s9plus-purple_1.jpg">
+														</a>
+														<div class="giam-percent">
+															<span class="text-giam-percent">Giảm 29%</span>
+														</div>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="https://cellphones.com.vn/samsung-galaxy-s9plus-chinh-hang.html">
+															<h3>Samsung Galaxy S9+ (Plus) 64GB</h3>
+														</a>
+														<div class="price-box">
+															<p class="old-price">
+																<span class="price">19.990.000&nbsp;₫</span>
+															</p>
+															<p class="special-price">
+																<span class="price">14.090.000&nbsp;₫</span>
+															</p>
+														</div>
+														<div class="clear"></div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/j4_den_1.jpg" style="display: block;margin: 10px auto 0px;">
+														</a>
+														<div class="sticker-vna">
+															<img src="images/iconvna.png">
+														</div>
+														<div class="tra-gop-0">
+															<span class="text-tra-gop-0">Trả góp 0%</span>
+														</div>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="">
+															<h3>Samsung Galaxy Note 9</h3>
+														</a>
+														<div class="price-box">
+															<p class="old-price">
+																<span class="price">22.990.000&nbsp;₫</span>
+															</p>
+															<p class="special-price">
+																<span class="price">17.490.000&nbsp;₫</span>
+															</p>
+														</div>
+														<div class="clear"></div>
+														<div class="promotion">
+															<p class="gift-cont">Trả góp lãi suất 0% với Home Credit. Trả trước 20%, kỳ hạn 6 tháng (Áp
+																dụng cùng các khuyến mại khác)</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/a3s-purple.jpg">
+														</a>
+														<div class="sticker-vna">
+															<img src="images/iconvna.png">
+														</div>
+														<div class="tra-gop-0">
+															<span class="text-tra-gop-0">Trả góp 0%</span>
+														</div>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="https://cellphones.com.vn/dien-thoai-sharp-a2.html">
+															<h3>Sharp A2</h3>
+														</a>
+														<div class="price-box">
+															<p class="old-price">
+																<span class="price">2.990.000&nbsp;₫</span>
+															</p>
+															<p class="special-price">
+																<span class="price">2.490.000&nbsp;₫</span>
+															</p>
+														</div>
+														<div class="clear"></div>
+														<div class="promotion">
+															<p class="gift-cont"> và
+																<b>1 km</b> khác
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/2343b9f9dcc45647a63d493505a1d624.jpg">
+														</a>
+														<div class="sticker-hotsale">
+															<img src="images/iconsale.png" />
+														</div>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="">
+															<h3>Huawei Y7 Pro 2019</h3>
+														</a>
+														<div class="price-box">
+															<span class="regular-price">
+																<span class="price">3.790.000&nbsp;₫</span>
+															</span>
+														</div>
+														<div class="clear"></div>
+														<div class="promotion">
+															<p class="gift-cont">Trả góp lãi suất 0% với Home Credit. Trả trước 30%, kỳ hạn 4 tháng (Áp
+																dụng cùng các khuyến mại khác) và
+																<b>1 km</b> khác
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+												<div class="product-item">
+													<div class="lt-product-group-image">
+														<a href="">
+															<img src="./images/image-product/galaxy-note-9-bronze.jpg">
+														</a>
+														<div class="sticker-vna">
+															<img src="images/iconvna.png">
+														</div>
+														<div class="tra-gop-0">
+															<span class="text-tra-gop-0">Trả góp 0%</span>
+														</div>
+													</div>
+													<div class="lt-product-group-info">
+														<a href="">
+															<h3>OPPO A3s 16GB</h3>
+														</a>
+														<div class="price-box">
+															<span class="regular-price">
+																<span class="price">3.290.000&nbsp;₫</span>
+															</span>
+														</div>
+														<div class="clear"></div>
+														<div class="promotion"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="toolbar-bottom">
+											<div class="toolbar">
+												<div class="pager">
+													<div class="float-left amount">Có <strong>36</strong> sản phẩm trong <strong>2</strong> trang </div>
+													<div class="float-right pages">
+														<ul class="pagination">
+															<li class="active"><a href="">1</a></li>
+															<li><a href="" rel="nofollow">2</a></li>
+														</ul>
+														<ul class="pagination">
+															<li><a href="" rel="nofollow">Tiếp <i class="fa fa-angle-right"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+							
+							<section class="news-category">
+								<h2 class="mt-2 title-new-block font-weight-bold"><a href="">Tin tức về Apple</a></h2>
+								<div id="news_category">
+									<div class="carousel" data-flickity=' {"imagesLoaded": true, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": true,"prevNextButtons": true,"percentPosition": true,"pageDots": false, "rightToLeft": false, "autoPlay" : false}'>
+										<div class="carousel-cell col-md-3">
+											<div class="col-inner">
+												<a class="avt" href="" target="_blank">
+													<img src="images/image-new/Apple-iPhone-TS-concept-Hasan-Kaymak-2019-4-350x250.jpg">
+												</a>
+												<h3 class="new-title font-weight-bold"><a class="link" href="" target="_blank">iPhone trong suốt trông sẽ như thế nào? Mời bạn xem ngay trong bài viết này</a></h3>
+											</div>
+										</div>
+										<div class="carousel-cell col-md-3">
+											<div class="col-inner">
+												<a class="avt" href="" target="_blank">
+													<img src="images/image-new/iphone-x-fold-concept-cover1-350x250.jpg">
+												</a>
+												<h3 class="new-title font-weight-bold"><a class="link" href="" target="_blank">Mời chiêm ngưỡng ý tưởng iPhone X Fold màn hình gập với thiết kế đẹp khó cưỡng</a></h3>
+											</div>
+										</div>
+										<div class="carousel-cell col-md-3">
+											<div class="col-inner">
+												<a class="avt" href="" target="_blank">
+													<img src="images/image-new/cell-21-350x250.jpg">
+												</a>
+												<h3 class="new-title font-weight-bold"><a class="link" href="" target="_blank">Giám đốc Intel xác nhận iPhone 5G sẽ không ra mắt trong năm nay</a></h3>
+											</div>
+										</div>
+										<div class="carousel-cell col-md-3">
+											<div class="col-inner">
+												<a class="avt" href="" target="_blank">
+													<img src="images/image-new/ciobulletin-ios-update-to-fix-china-ban-1-350x250.jpg">
+												</a>
+												<h3 class="new-title font-weight-bold"><a class="link" href="" target="_blank">Apple và “cú sảy chân” tại thị trường tỷ dân Trung Quốc, lối đi nào cho &#8220;Táo khuyết&#8221;?</a></h3>
+											</div>
+										</div>
+										<div class="carousel-cell col-md-3">
+											<div class="col-inner">
+												<a class="avt" href="" target="_blank">
+													<img src="images/image-new/IMG_1990-350x250.jpg">
+												</a>
+												<h3 class="new-title font-weight-bold"><a class="link" href="" target="_blank">Hướng dẫn cài đặt đèn flash LED của iPhone làm đèn thông báo</a></h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							
+							<div class="mt-3 toolbar-bottom category-blog">
+								<h2 class="title-blog font-weight-bold mb-3">Điện thoại Apple – Sản phẩm chiếm phần lớn lợi nhuận ngành di động</h2>
+								<p>Kể từ khi ra mắt thế hệ đầu tiên vào năm 2007, những chiếc điện thoại Apple&nbsp;luôn là sản phẩm được nhiều người dùng ưa chuộng, mang lại cho Apple nguồn lợi nhuận khổng lồ. Theo những con số thống kê, đã từng có thời điểm Táo khuyết chiếm đến hơn 90% lợi nhuận của toàn ngành di động, mà điện thoại Apple chính là một trong những nhân tố chủ lực tạo nên thành công ấy. Trong năm 2018, Apple cho ra mắt 3 dòng điện thoại iPhone, mang tên: 
+									<a href="" title="iPhone XS" target="_blank">iPhone XS</a>, 
+									<a href="" title="iPhone XS Max" target="_blank">iPhone XS Max</a>,&nbsp;
+									<a href="" title="iPhone XR" target="_blank">iPhone XR</a>&nbsp;nhằm phục vụ cho số lượng lớn người dùng yêu thích hãng táo khuyết.
+								</p>
+								<p>Tại Cellphones, điện thoại Apple cũng luôn là một trong những thương hiệu sản phẩm được bán chạy nhất. Để mua điện thoại, smartphone&nbsp;Apple chính hãng giá rẻ và nhiều ưu đãi hấp dẫn, bạn chỉ cần đến những cửa hàng CellphoneS gần nhất hoặc liên hệ với CellphoneS để được giao hàng tận nơi.</p>
+								<h2 class="title-blog font-weight-bold mb-3">Tại sao chúng ta nên mua điện thoại Apple iPhone?</h2>
+								<ul>
+									<li>Thiết kế đẹp và sang trọng, đúng với tiêu chí của một chiếc smartphone dòng cao cấp.</li>
+									<li>Hiệu năng mạnh mẽ, tính năng vượt trội đứng đầu thị trường di động.</li>
+									<li>Kho ứng dụng phong phú giúp bạn thoải mái lựa chọn và sử dụng.</li>
+									<li>Camera chụp ảnh nhanh, cho chất lượng sắc nét.</li>
+									<li>Tích hợp nhiều công nghệ hiện đại nâng cao trải nghiệm người dùng.</li>
+								</ul>
+								<h2 class="title-blog font-weight-bold mb-3">Tại sao chúng ta nên mua điện thoại Apple iPhone tại CellphoneS?</h2>
+								<ul>
+									<li>Hàng chính hãng, nguồn gốc rõ ràng.</li>
+									<li>Giá bán hợp lý, thường xuyên có nhiều ưu đãi hấp dẫn.</li>
+									<li>Chế độ bảo hành 12 tháng 1 đổi 1 theo tiêu chuẩn Apple.</li>
+									<li>Hỗ trợ nhiều dịch vụ tiện ích: trả góp, thanh toán qua thẻ, giao hàng tận nhà miễn phí.</li>
+									<li>Đội ngũ nhân viên tư vấn online và offline luôn sẵn sàng hỗ trợ, đáp ứng nhu cầu khách hàng.</li>
+								</ul>		
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+				</div>
+			</section>
+		</section>
+		
+	</main>
+	<!-- End main -->
+
+	<!-- footer -->
+	<footer id="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 mb-5 mb-sm-0">
+						<div class="footer-x">
+							<h3>Thông tin liên lạc</h3>
+							<div class="footer-content">
+								<p>Gọi mua hàng: <span style="font-size: large; color: #ff0000;"><strong><a href="tel:18002097"
+												onclick="actionFn('click-hotline')"><span style="color: #ff0000;">1800.<span
+														style="font-size: x-large;">2097</span></span></a></strong></span><span
+										style="color: #ff0000;"><span style="font-size: large; color: #ff0000;"><strong>&nbsp;<span
+													style="color: #000000;">(Miễn phí)</span></strong></span></span></p>
+								<p>Khiếu nại, góp ý: <a href="tel:18002063"><strong>1800.2063</strong></a></p>
+								<p>Thời gian phục vụ: <strong><em>8h - 22h</em></strong></p>
+								<p>Email: cskh@cellphones.com.vn</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12 mb-5 mb-sm-0">
+						<div class="footer-x">
+							<h3>Thông tin liên lạc</h3>
+							<div class="footer-content">
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<p>Giới thiệu</p>
+										<p>Tin công nghệ Sforum </p>
+										<p>Tra điểm Smember</p>
+										<p>Chính sách Bảo hành</p>
+										<p>Mua hàng từ xa</p>
+										<p>Tuyển dụng</p>
+										<p>Mua hàng - thanh toán Online</p>
+									</div>
+									<div class="col-md-6 col-sm-6 pl-md-0">
+										<p>Bán hàng Doanh nghiệp</p>
+										<p>Kiểm tra bảo hành - sửa chữa</p>
+										<p>Quy định về việc sao lưu dữ liệu</p>
+										<p>Chính sách bảo mật</p>
+										<p>Chính sách sử dụng</p>
+										<p>Hướng dẫn huỷ giao dịch, đổi trả</p>
+										<p>Trung tâm bảo hành chính hãng</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<div class="footer-x">
+							<h3>Hệ thống cửa hàng trên toàn quốc</h3>
+							<div class="footer-content">
+								<div class="lt-store">
+									<div class="dropdown">
+										<button class="btn btn-primary dropdown-toggle" type="button" id="store-a" data-toggle="dropdown"
+											aria-haspopup="true" aria-expanded="false">
+											Hồ Chí Minh
+										</button>
+										<div class="dropdown-menu" aria-labelledby="about-us">
+											<a class="dropdown-item" href="#">Hà Nội</a>
+											<a class="dropdown-item" href="#">Hồ Chí Minh</a>
+										</div>
+									</div>
+									<div class="store-cps">
+										<div class="dropdown">
+											<button class="btn btn-primary dropdown-toggle" type="button" id="store-b" data-toggle="dropdown"
+												aria-haspopup="true" aria-expanded="false">
+												Xem hệ thống cửa hàng bán lẻ CellphoneS
+											</button>
+											<div class="dropdown-menu" aria-labelledby="about-us">
+												<a class="dropdown-item" href="#">546 Trương Định, P. Tân Mai, Q. Hoàng Mai - Ngã tư Tân Mai,
+													Trương Định</a>
+												<a class="dropdown-item" href="#">241-243, Đỗ Xuân Hợp, Phước Long B, Quận 9</a>
+												<a class="dropdown-item" href="#">1075B Hậu Giang, P. 11, Q. 6</a>
+												<a class="dropdown-item" href="#">248 Nguyễn Thị Thập, P. Tân Quy, Q. 7</a>
+												<a class="dropdown-item" href="#">212 Khương Đình, P. Hạ Đình, Q. Thanh Xuân</a>
+												<a class="dropdown-item" href="#">283 Hồ Tùng Mậu, P. Cầu Diễn, Q. Nam Từ Liêm</a>
+												<a class="dropdown-item" href="#">56/2B Nguyễn Ảnh Thủ, P. Trung Mỹ Tây, Q. 12</a>
+												<a class="dropdown-item" href="#">114 Phan Đăng Lưu, P. 3, Q. Phú Nhuận</a>
+												<a class="dropdown-item" href="#">A23/8, Ấp 1A, Quốc Lộ 50, X. Bình Hưng, H. Bình Chánh</a>
+												<a class="dropdown-item" href="#">543 Nguyễn Trãi, P. Thanh Xuân Nam, Q. Thanh Xuân</a>
+											</div>
+										</div>
+									</div>
+									<div class="store-dtv">
+										<div class="dropdown">
+											<button class="btn btn-primary dropdown-toggle" type="button" id="store-c" data-toggle="dropdown"
+												aria-haspopup="true" aria-expanded="false">
+												Xem hệ thống cửa hàng sửa chữa Điện Thoại Vui
+											</button>
+											<div class="dropdown-menu" aria-labelledby="about-us">
+												<a class="dropdown-item" href="#">546 Trương Định, P. Tân Mai, Q. Hoàng Mai - Ngã tư Tân Mai,
+													Trương Định</a>
+												<a class="dropdown-item" href="#">241-243, Đỗ Xuân Hợp, Phước Long B, Quận 9</a>
+												<a class="dropdown-item" href="#">1075B Hậu Giang, P. 11, Q. 6</a>
+												<a class="dropdown-item" href="#">248 Nguyễn Thị Thập, P. Tân Quy, Q. 7</a>
+												<a class="dropdown-item" href="#">212 Khương Đình, P. Hạ Đình, Q. Thanh Xuân</a>
+												<a class="dropdown-item" href="#">283 Hồ Tùng Mậu, P. Cầu Diễn, Q. Nam Từ Liêm</a>
+												<a class="dropdown-item" href="#">56/2B Nguyễn Ảnh Thủ, P. Trung Mỹ Tây, Q. 12</a>
+												<a class="dropdown-item" href="#">114 Phan Đăng Lưu, P. 3, Q. Phú Nhuận</a>
+												<a class="dropdown-item" href="#">A23/8, Ấp 1A, Quốc Lộ 50, X. Bình Hưng, H. Bình Chánh</a>
+												<a class="dropdown-item" href="#">543 Nguyễn Trãi, P. Thanh Xuân Nam, Q. Thanh Xuân</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>
+				© 2018. Công ty TNHH Thương mại và dịch vụ kỹ thuật Minh Nguyệt. GPDKKD: 0312289651 do sở KH &amp; ĐT TP.HCM cấp
+				ngày 22/05/2013. Địa chỉ: 363 Võ Văn Tần, phường 5, quận 3 . TP Hồ Chí Minh. Điện thoại: 028.7108.9666 . Email:
+				cskh@cellphones.com.vn. Chịu trách nhiệm nội dung: Nguyễn Anh Văn.
+			</p>
+		</div>
+	</footer>
+	<!-- End footer -->
+</body>
+
+</html>
