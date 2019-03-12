@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>[Thủ thuật] 3 bước đơn giản để hẹn giờ, đặt lịch tự động gửi tin nhắn trên iPhone</title>
+	<link rel=icon href="./images/favicon.png">
+
+	<!-- Jquery -->
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/jquery-3.3.1.min.js"></script>
+
+	<!-- Bootstrap 4 -->
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<script src="./js/popper.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+
+	<link href="./css/fontello.css" rel="stylesheet">
+	<link href="./css/font-awesome.min.css" rel="stylesheet" />
+
+	<!-- Slider -->
+	<link href="./css/flickity.css" rel="stylesheet" media="screen">
+	<script src="./js/flickity.min.js"></script>
+
+	<!-- Megamenu -->
+	<link href="./css/slider-menu.css" rel="stylesheet" type="text/css" />
+	<link href="./css/megamenu.css" rel="stylesheet" type="text/css" />
+	<script src="./js/jquery.menu-aim.js"></script>
+	<script src="./js/webslidemenu.js"></script>
+
+	<!-- Zoom -->
+	<script src="./js/jquery.elevatezoom.min.js"></script>
+
+	<!-- Custom -->
+	<link href="./css/style.css" rel="stylesheet">
+	
+
+</head>
+
+<body class="product-category-view">
+	<!-- Header -->
+	<header id="header">
+		<div class="header">
+			<div class="header-main">
+				<div class="wsmainfull clearfix">
+					<div class="wsmainwp clearfix">
+						<div class="float-left header-left">
+							<div class="float-left logo">
+								<a href="/" title="Demo - Hệ thống bán lẻ điện thoại">
+									<img src="./images/logo.jpg" alt="Demo - Hệ thống bán lẻ điện thoại"></a>
+							</div>
+							<div class="float-left x-search">
+								<div class="float-left" style="padding: 9px 0px;">
+									<div class="btn-group">
+										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+											aria-haspopup="true" aria-expanded="false" style="padding: 6px 5px 6px 8px !important;">
+											Hà Nội
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a href="#">
+													<i class="fa fa-map-marker"></i> Hà Nội
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fa fa-map-marker"></i> Hồ Chí Minh
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<form id="search_mini_form" action="" method="get">
+									<div class="form-search">
+										<label for="search">Search:</label>
+										<input id="search" type="text" name="q" value="" class="input-text" maxlength="128">
+										<button type="submit">
+											<i class="fa fa-search"></i>
+										</button>
+										<div id="search_autocomplete" class="search-autocomplete" style="display: none;"></div>
+									</div>
+								</form>
+							</div>
+
+						</div>
+
+						<div class="wsmobileheader clearfix ">
+							<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+						</div>
+
+						<!--Main Menu HTML Code-->
+						<nav class="wsmenu clearfix">
+							<div class="overlapblackbg"></div>
+							<ul class="wsmenu-list">
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-mobile fa-2x"></i>Điện thoại<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Apple</h3>
+														<ul>
+															<li><a href="#">iPhone XS</a></li>
+															<li><a href="#">iPhone XS Max</a></li>
+															<li><a href="#">iPhone XR</a></li>
+															<li><a href="#">iPhone X</a></li>
+															<li><a href="#">iPhone 8 | 8 Plus</a></li>
+															<li><a href="#">iPhone 7 | 7 Plus</a></li>
+															<li><a href="#">iPhone 6S | 6S Plus</a></li>
+														</ul>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Samsung</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Huawei</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Xiaomi</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">OPPO</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Nokia</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">ASUS</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Realme</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Vsmart</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Hãng khác</h3>
+														<ul>
+															<li><a href="#">Pocophone</a></li>
+															<li><a href="#">Honor</a></li>
+															<li><a href="#">BlackBerry</a></li>
+															<li><a href="#">BKAV Bphone</a></li>
+															<li><a href="#">Sharp</a></li>
+														</ul>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Tin đồn - Mới ra</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Xem tất cả</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-tablet fa-2x"></i>Tablet<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad Pro</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad Air</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad 9.7</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad mini</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Huawei</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-refresh fa-2x"></i>Hàng cũ<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Apple</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad Air</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad 9.7</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad mini</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Huawei</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-refresh fa-2x"></i>Phụ kiện<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Apple</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad Air</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad 9.7</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad mini</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Huawei</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-music  fa-2x"></i>Đồ chơi<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Apple</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad Air</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad 9.7</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad mini</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Huawei</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-music  fa-2x"></i>Âm thanh<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Apple</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad Air</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad 9.7</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad mini</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Huawei</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-laptop fa-2x"></i>Laptop<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">MacBook</h3>
+														<ul>
+															<li><a href="#">Macbook Pro 2018</a></li>
+															<li><a href="#">Macbook Air 2018</a></li>
+															<li><a href="#">MacBook 2017</a></li>
+															<li><a href="#">MacBook Pro 2017</a></li>
+															<li><a href="#">MacBook 2016</a></li>
+															<li><a href="#">MacBook Pro 2016</a></li>
+															<li><a href="#">MacBook Air 2017</a></li>
+														</ul>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Dell</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">HP</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true"><a href="#"><i class="fa fa-gift fa-2x"></i>Trả góp<span
+											class="wsarrow"></span></a></li>
+								<li aria-haspopup="true"><a href="#"><i class="fa fa-gift fa-2x"></i>Sửa chữa<span
+											class="wsarrow"></span></a>
+									<ul class="sub-menu">
+										<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Website Design </a></li>
+										<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Ecommerce Solutions</a></li>
+										<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Application Development</a>
+										</li>
+										<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Website Development</a></li>
+										<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Open Source Development</a>
+											<ul class="sub-menu">
+												<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Submenu item 1</a></li>
+												<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Submenu item 2</a></li>
+												<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Submenu item 3</a></li>
+												<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Submenu item 4</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li aria-haspopup="true"><a href="#"><i class="fa fa-gift fa-2x"></i>Khuyến mãi<span
+											class="wsarrow"></span></a></li>
+								<li aria-haspopup="true"><a href="#"><i class="fa fa-gift fa-2x"></i>Công nghệ<span
+											class="wsarrow"></span></a></li>
+								<li aria-haspopup="true"><a href="#"><i class="fa fa-gift fa-2x"></i>Ưu đãi đối tác<span
+											class="wsarrow"></span></a></li>
+
+							</ul>
+						</nav>
+						<!--Menu HTML Code-->
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</header>
+	<!-- End Header -->
+
+	<!--  main -->
+	<main id="main">
+	
+		<section class="awe-section-1 mb-2">
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+					<li class="home">
+						<a href="" title="Go to Home Page">Home</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li class="product">Thủ thuật</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		
+		<section class="awe-section-1 mb-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-sm-8 col-12">
+						<div class="news-detail">
+							<div class="page-title mb-4">
+								<h1 class="font-weight-bold">[Thủ thuật] 3 bước đơn giản để hẹn giờ, đặt lịch tự động gửi tin nhắn trên iPhone</h1>
+							</div>
+							<div class="content-news-detail text-justify">
+								<p>
+									<strong>Đối với người bận rộn thì tính năng hẹn giờ nhắn tin trên 
+										<a href="" target="_blank" rel="noopener">iPhone</a> là vô cùng cần thiết. Tuy nhiên, đây vẫn là một tính năng xa lạ mà 
+										<a href="" target="_blank" rel="noopener">Apple</a> vẫn không cập nhật cho hệ điều hành iOS. Nếu bạn cần sử dụng tính năng này thì bài viết dưới đây sẽ hướng dẫn bạn.
+									</strong>
+								</p>
+								<div class="jeg_ad jeg_ad_article jnews_content_inline_ads  ">
+									<div class="ads-wrapper align-center ">
+										<div class="ads_shortcode"></div>
+									</div>
+								</div>
+								<p>Không biết tương lai 
+									<a title="Apple" href="">Apple</a> có đưa tính năng này vào cho người dùng hay không, nhưng chúng ta hoàn toàn có thể chủ động làm được việc này thông qua ứng dụng Siri Shortcut có sẵn trên iOS 12. Chỉ cần tạo một phím tắt đơn giản thông qua các bước hướng dẫn dưới đây.
+								</p>
+								<p style="text-align: center;">
+									<img title="Sforum - Trang thông tin công nghệ mới nhất Hen-gio-nhan-tin-tren-iPhone-1 [Thủ thuật] 3 bước đơn giản để hẹn giờ, đặt lịch tự động gửi tin nhắn trên iPhone  " src="./images/image-new/Hen-gio-nhan-tin-tren-iPhone-1-750x393.jpg" alt="Sforum - Trang thông tin công nghệ mới nhất Hen-gio-nhan-tin-tren-iPhone-1 [Thủ thuật] 3 bước đơn giản để hẹn giờ, đặt lịch tự động gửi tin nhắn trên iPhone  " >
+								</p>
+								<p>
+									<strong>Bước 1:</strong> Để tạo phím tắt hẹn giờ nhắn tin trên 
+									<a href="" target="_blank" rel="noopener">iPhone</a>, hãy vào liên kết dưới đây bằng trình duyệt Safari và chọn Get Shortcut
+								</p>
+								<p>– 
+									<a href="" target="_blank" rel="noopener nofollow">Phím tắt hẹn giờ nhắn tin trên iPhone</a>
+								</p>
+								<p>
+									<img title="Sforum - Trang thông tin công nghệ mới nhất Hen-gio-nhan-tin-tren-iPhone-2 [Thủ thuật] 3 bước đơn giản để hẹn giờ, đặt lịch tự động gửi tin nhắn trên iPhone  " src="./images/image-new/Hen-gio-nhan-tin-tren-iPhone-2-1140x641.jpg" alt="Sforum - Trang thông tin công nghệ mới nhất Hen-gio-nhan-tin-tren-iPhone-2 [Thủ thuật] 3 bước đơn giản để hẹn giờ, đặt lịch tự động gửi tin nhắn trên iPhone  " >
+								</p>
+								<p>
+									<strong>Bước 2:</strong> Vào ứng dụng Siri Shortcut &gt; Chuyển sang mục Library ở dưới cùng màn hình &gt; Chọn vào phím tắt Send delayed… &gt; Bảng thông báo hiện ra yêu cầu truy cập danh bạ, bạn hãy chọn Ok.
+								</p>
+								<p>
+									<img title="Sforum - Trang thông tin công nghệ mới nhất Hen-gio-nhan-tin-tren-iPhone-3 [Thủ thuật] 3 bước đơn giản để hẹn giờ, đặt lịch tự động gửi tin nhắn trên iPhone  " src="./images/image-new/Hen-gio-nhan-tin-tren-iPhone-3-1140x641.jpg" alt="Sforum - Trang thông tin công nghệ mới nhất Hen-gio-nhan-tin-tren-iPhone-3 [Thủ thuật] 3 bước đơn giản để hẹn giờ, đặt lịch tự động gửi tin nhắn trên iPhone  " >
+								</p>
+								<p>
+									<strong>Bước 3:</strong> Danh bạ hiện ra, bạn hãy chọn người mà bạn muốn gửi tin nhắn &gt; Khung nhập tin nhắn hiện ra, bạn hãy nhập nội dung tin nhắn muốn gửi vào, sau đó chọn Ok &gt; Chọn thời gian gửi tin nhắn, chọn Ok.
+								</p>
+								<p>
+									<img title="Sforum - Trang thông tin công nghệ mới nhất Hen-gio-nhan-tin-tren-iPhone-4 [Thủ thuật] 3 bước đơn giản để hẹn giờ, đặt lịch tự động gửi tin nhắn trên iPhone  " src="./images/image-new/Hen-gio-nhan-tin-tren-iPhone-4-1140x641.jpg" alt="Sforum - Trang thông tin công nghệ mới nhất Hen-gio-nhan-tin-tren-iPhone-4 [Thủ thuật] 3 bước đơn giản để hẹn giờ, đặt lịch tự động gửi tin nhắn trên iPhone  " >
+								</p>
+								<p>
+									<em>Lưu ý: Phải để ứng dụng Siri Shortcut được chạy nền, nếu không tin nhắn của bạn sẽ không được gửi đi.</em>
+								</p>
+								<p>Giờ tính năng hẹn giờ nhắn tin trên iPhone đã trở nên dễ dàng đối với bạn rồi đấy. Mong rằng thủ thuật này có ích cho bạn và đừng quên chia sẻ với bạn bè của mình cùng áp dụng nhé!</p>
+								<div id="bvlq-buttom"></div>
+							</div>
+							<div class="post_tags">
+								<span class="font-weight-bold">Thẻ:</span>
+								<a href="" rel="tag">Thủ thuật iOS</a>
+								<a href="" rel="tag">Thủ thuật iPhone</a>
+							</div>
+							<div class="form-contact-xs pt-3 mt-3 mb-3">
+								<h3>Trả lời </h3>
+								<p>Email của bạn sẽ không được hiển thị công khai. Các trường bắt buộc được đánh dấu *</p>
+								<form id="frm-send-contact" class="frm-required form-contact margin-t-10" method="POST" action="http://otomientrung.com.vn/contact/contact-us/send-request" novalidate="novalidate">
+									<div class="row">
+										<div class="col-md-12 col-sm-12 col-12">
+											<div class="form-group">
+												<label class="font-weight-bold">Bình luận</label>
+												<textarea id="content_textarea" name="content" class="form-control required" rows="3" placeholder="" aria-required="true"></textarea>
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-6 col-12">
+											<div class="form-group">
+												<label class="font-weight-bold">Email<span class="color-red">*</span></label>
+												<input class="form-control required" type="text" name="email" placeholder="" aria-required="true">
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-6 col-12">
+											<div class="form-group">
+												<label class="font-weight-bold">Tên<span class="color-red">*</span></label>
+												<input class="form-control required" type="text" name="full_name" placeholder="" aria-required="true">
+											</div>
+										</div>
+										<div class="col-md-12 col-sm-12 col-12">
+											<div class="form-group">
+												<button type="submit" class="bt btn-default txt-upper btn-submit">
+													<span class="name">Phản hồi</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="news-block-relate">
+							<h3 class="news-block-title font-weight-bold mb-3"><span>Bài viết liên quan</span></h3>
+							<div class="row">
+								<div class="col-first col-md-12 col-sm-12 col-12">
+									<div class="news-item mb-3">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="image-new">
+													<a href="" title=""><img src="./images/image-new/new1.jpg" alt="Tổng hợp công thức muối rau củ, dưa hành đang gây “sốt” trên MXH"></a>
+													<div class="jeg-post-category">
+														<span><a href="">Thủ thuật</a></span>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-7">
+												<h4 class="title-new font-weight-bold"><a href="" title="">Tổng hợp công thức muối rau củ, dưa hành đang gây “sốt” trên MXH</a></h4>
+												<div class="time-new mb-2">
+													<div class="author-new mr-3">
+														<span class="by">bởi</span> 
+														<a href="">Marin</a>
+													</div>
+													<div class="date-new">
+														<a href=""><i class="fa fa-clock-o"></i> 2 ngày trước</a>
+													</div>
+												</div>
+												<div class="blog-description">
+													<p>Một bức ảnh đẹp cần rất nhiều những yếu tố như hậu kỳ, ánh sáng,... và chỉnh sửa sau khi...</p>
+												</div>
+												<a href="" class="redmore">Đọc thêm</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 col-12">
+									<div class="news-item mb-3">
+										<div class="row">
+											<div class="col-md-5 col-sm-5">
+												<div class="image-new">
+													<a href="" title=""><img src="./images/image-new/new2.jpg" alt=""></a>
+												</div>
+											</div>
+											<div class="col-md-7 col-sm-7 pl-sm-0">
+												<h4 class="title-new font-weight-bold"><a href="" title="">[Thủ thuật] Hẹn giờ tự động tắt nhạc và video trên iPhone</a></h4>
+												<div class="time-new">
+													<div class="date-new">
+														<a href=""><i class="fa fa-clock-o"></i> 6 ngày trước</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 col-12">
+									<div class="news-item mb-3">
+										<div class="row">
+											<div class="col-md-5 col-sm-5">
+												<div class="image-new">
+													<a href="" title=""><img src="./images/image-new/new3.jpg" alt=""></a>
+												</div>
+											</div>
+											<div class="col-md-7 col-sm-7 pl-sm-0">
+												<h4 class="title-new font-weight-bold"><a href="" title="">Cách truy cập iCloud mà không cần iPhone, iPad</a></h4>
+												<div class="time-new">
+													<div class="date-new">
+														<a href=""><i class="fa fa-clock-o"></i> 6 ngày trước</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 col-12">
+									<div class="news-item mb-3">
+										<div class="row">
+											<div class="col-md-5 col-sm-5">
+												<div class="image-new">
+													<a href="" title=""><img src="./images/image-new/new4.jpg" alt=""></a>
+												</div>
+											</div>
+											<div class="col-md-7 col-sm-7 pl-sm-0">
+												<h4 class="title-new font-weight-bold"><a href="" title="">Bạn đã biết cách phát Wifi trên iPhone đúng cách hay chưa?</a></h4>
+												<div class="time-new">
+													<div class="date-new">
+														<a href=""><i class="fa fa-clock-o"></i> 1 tuần trước</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 col-12">
+									<div class="news-item mb-3">
+										<div class="row">
+											<div class="col-md-5 col-sm-5">
+												<div class="image-new">
+													<a href="" title=""><img src="./images/image-new/new5.jpg" alt=""></a>
+												</div>
+											</div>
+											<div class="col-md-7 col-sm-7 pl-sm-0">
+												<h4 class="title-new font-weight-bold"><a href="" title="">Dễ dàng bật/tắt Smart HDR và Auto HDR trên iPhone</a></h4>
+												<div class="time-new">
+													<div class="date-new">
+														<a href=""><i class="fa fa-clock-o"></i> 1 tuần trước</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-left col-md-4 col-sm-4 col-12">
+						<div class="news-block news-block-left">
+							<h3 class="news-block-title"><span>Tin tức mới</span></h3>
+							<div class="row">
+								<div class="col-md-12 col-sm-12 col-12">
+									<div class="news-small mb-3">
+										<div class="image-new">
+											<a href="" title=""><img src="./images/image-new/new-left1.jpg" alt=""></a>
+										</div>
+										<div class="new-content">
+											<h4 class="title-new font-weight-bold"><a href="" title="">Tất tần tật về bộ đôi Galaxy A30 và Galaxy A50 sắp được bán tại VN</a></h4>
+											<div class="time-new">
+												<div class="date-new">
+													<a href=""><i class="fa fa-clock-o"></i> 3 ngày trước</a>
+												</div>
+											</div>
+											<div class="blog-description">
+												<p>Galaxy A30 và Galaxy A50 là bộ đôi smartphone tầm trung mới nhất của Samsung hứa hẹn sẽ gây bão...</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 col-sm-12 col-12">
+									<div class="news-small mb-3">
+										<div class="image-new">
+											<a href="" title=""><img src="./images/image-new/new-left2.jpg" alt=""></a>
+										</div>
+										<div class="new-content">
+											<h4 class="title-new font-weight-bold"><a href="" title="">CEO BlackBerry tin rằng smartphone màn hình gập không cần thiết, đắt đỏ và cồng kềnh</a></h4>
+											<div class="time-new">
+												<div class="date-new">
+													<a href=""><i class="fa fa-clock-o"></i> 6 ngày trước</a>
+												</div>
+											</div>
+											<div class="blog-description">
+												<p>Mặc dù nhiều hãng smartphone đang chuyển hướng sang sản xuất smartphone màn hình gập thì có những công ty...</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 col-sm-12 col-12">
+									<div class="news-small mb-3">
+										<div class="image-new">
+											<a href="" title=""><img src="./images/image-new/new-left3.jpg" alt=""></a>
+										</div>
+										<div class="new-content">
+											<h4 class="title-new font-weight-bold"><a href="" title="">Apple sẽ thay thế cổng Lightning bằng 1 loại cổng mới, chống nước, chống bụi tốt hơn?</a></h4>
+											<div class="time-new">
+												<div class="date-new">
+													<a href=""><i class="fa fa-clock-o"></i> 1 tuần trước</a>
+												</div>
+											</div>
+											<div class="blog-description">
+												<p>Không chỉ USB-C mà dường như Apple cũng đang nghiên cứu, chế tạo một loại cổng kết nối mới cho...</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 col-sm-12 col-12">
+									<div class="news-small mb-3">
+										<div class="image-new">
+											<a href="" title=""><img src="./images/image-new/new-left4.jpg" alt=""></a>
+										</div>
+										<div class="new-content">
+											<h4 class="title-new font-weight-bold"><a href="" title="">Theo lời Tổng thông Trump, Tim Cook thay tên Twitter thành “Tim Apple”</a></h4>
+											<div class="time-new">
+												<div class="date-new">
+													<a href=""><i class="fa fa-clock-o"></i> 1 tuần trước</a>
+												</div>
+											</div>
+											<div class="blog-description">
+												<p>Mới đây, trong 1 cuộc họp của Hội đồng tư vấn chính sách lao động Mỹ, Tổng thống Donald Trump...</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 col-sm-12 col-12">
+									<div class="news-small mb-3">
+										<div class="image-new">
+											<a href="" title=""><img src="./images/image-new/new-left5.jpg" alt=""></a>
+										</div>
+										<div class="new-content">
+											<h4 class="title-new font-weight-bold"><a href="" title="">Đáp án nhìn ảnh chụp, đoán tên thiết bị: Galaxy S10 Plus đối đầu Mate 20 Pro</a></h4>
+											<div class="time-new">
+												<div class="date-new">
+													<a href=""><i class="fa fa-clock-o"></i> 1 tuần trước</a>
+												</div>
+											</div>
+											<div class="blog-description">
+												<p>Để tìm ra chiếc smartphone chụp ảnh được yêu thích, 3 ngày trước Sforum đã có một bài bình chọn...</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="instagram-block">
+							<h3 class="news-block-title"><span>Instagram @cellphonesvn</span></h3>
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-6">
+									<div class="instagram-item mb-3">
+										<a href="" target="_blank">
+											<i class="fa fa-heart">575</i>
+											<div class="thumbnail-block">
+												<img class="lazyloaded" src="./images/galery/g1.jpg" alt="" title=" ">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-6">
+									<div class="instagram-item mb-3">
+										<a href="" target="_blank">
+											<i class="fa fa-heart">500</i>
+											<div class="thumbnail-block">
+												<img class="lazyloaded" src="./images/galery/g2.jpg" alt="" title=" ">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-6">
+									<div class="instagram-item mb-3">
+										<a href="" target="_blank">
+											<i class="fa fa-heart">455</i>
+											<div class="thumbnail-block">
+												<img class="lazyloaded" src="./images/galery/g3.jpg" alt="" title=" ">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-6">
+									<div class="instagram-item mb-3">
+										<a href="" target="_blank">
+											<i class="fa fa-heart">275</i>
+											<div class="thumbnail-block">
+												<img class="lazyloaded" src="./images/galery/g4.jpg" alt="" title=" ">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-6">
+									<div class="instagram-item mb-3">
+										<a href="" target="_blank">
+											<i class="fa fa-heart">515</i>
+											<div class="thumbnail-block">
+												<img class="lazyloaded" src="./images/galery/g5.jpg" alt="" title=" ">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-6">
+									<div class="instagram-item mb-3">
+										<a href="" target="_blank">
+											<i class="fa fa-heart">175</i>
+											<div class="thumbnail-block">
+												<img class="lazyloaded" src="./images/galery/g6.jpg" alt="" title=" ">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-6">
+									<div class="instagram-item mb-3">
+										<a href="" target="_blank">
+											<i class="fa fa-heart">975</i>
+											<div class="thumbnail-block">
+												<img class="lazyloaded" src="./images/galery/g7.jpg" alt="" title=" ">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-6">
+									<div class="instagram-item mb-3">
+										<a href="" target="_blank">
+											<i class="fa fa-heart">575</i>
+											<div class="thumbnail-block">
+												<img class="lazyloaded" src="./images/galery/g8.jpg" alt="" title=" ">
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-6">
+									<div class="instagram-item mb-3">
+										<a href="" target="_blank">
+											<i class="fa fa-heart">988</i>
+											<div class="thumbnail-block">
+												<img class="lazyloaded" src="./images/galery/g9.jpg" alt="" title=" ">
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="./js/custom.js" type="text/javascript"></script>
+	</main>
+	<!-- End main -->
+
+	<!-- footer -->
+	<footer id="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 mb-5 mb-sm-0">
+						<div class="footer-x">
+							<h3>Thông tin liên lạc</h3>
+							<div class="footer-content">
+								<p>Gọi mua hàng: <span style="font-size: large; color: #ff0000;"><strong><a href="tel:18002097"
+												onclick="actionFn('click-hotline')"><span style="color: #ff0000;">1800.<span
+														style="font-size: x-large;">2097</span></span></a></strong></span><span
+										style="color: #ff0000;"><span style="font-size: large; color: #ff0000;"><strong>&nbsp;<span
+													style="color: #000000;">(Miễn phí)</span></strong></span></span></p>
+								<p>Khiếu nại, góp ý: <a href="tel:18002063"><strong>1800.2063</strong></a></p>
+								<p>Thời gian phục vụ: <strong><em>8h - 22h</em></strong></p>
+								<p>Email: cskh@cellphones.com.vn</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12 mb-5 mb-sm-0">
+						<div class="footer-x">
+							<h3>Thông tin liên lạc</h3>
+							<div class="footer-content">
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<p>Giới thiệu</p>
+										<p>Tin công nghệ Sforum </p>
+										<p>Tra điểm Smember</p>
+										<p>Chính sách Bảo hành</p>
+										<p>Mua hàng từ xa</p>
+										<p>Tuyển dụng</p>
+										<p>Mua hàng - thanh toán Online</p>
+									</div>
+									<div class="col-md-6 col-sm-6 pl-md-0">
+										<p>Bán hàng Doanh nghiệp</p>
+										<p>Kiểm tra bảo hành - sửa chữa</p>
+										<p>Quy định về việc sao lưu dữ liệu</p>
+										<p>Chính sách bảo mật</p>
+										<p>Chính sách sử dụng</p>
+										<p>Hướng dẫn huỷ giao dịch, đổi trả</p>
+										<p>Trung tâm bảo hành chính hãng</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<div class="footer-x">
+							<h3>Hệ thống cửa hàng trên toàn quốc</h3>
+							<div class="footer-content">
+								<div class="lt-store">
+									<div class="dropdown">
+										<button class="btn btn-primary dropdown-toggle" type="button" id="store-a" data-toggle="dropdown"
+											aria-haspopup="true" aria-expanded="false">
+											Hồ Chí Minh
+										</button>
+										<div class="dropdown-menu" aria-labelledby="about-us">
+											<a class="dropdown-item" href="#">Hà Nội</a>
+											<a class="dropdown-item" href="#">Hồ Chí Minh</a>
+										</div>
+									</div>
+									<div class="store-cps">
+										<div class="dropdown">
+											<button class="btn btn-primary dropdown-toggle" type="button" id="store-b" data-toggle="dropdown"
+												aria-haspopup="true" aria-expanded="false">
+												Xem hệ thống cửa hàng bán lẻ CellphoneS
+											</button>
+											<div class="dropdown-menu" aria-labelledby="about-us">
+												<a class="dropdown-item" href="#">546 Trương Định, P. Tân Mai, Q. Hoàng Mai - Ngã tư Tân Mai,
+													Trương Định</a>
+												<a class="dropdown-item" href="#">241-243, Đỗ Xuân Hợp, Phước Long B, Quận 9</a>
+												<a class="dropdown-item" href="#">1075B Hậu Giang, P. 11, Q. 6</a>
+												<a class="dropdown-item" href="#">248 Nguyễn Thị Thập, P. Tân Quy, Q. 7</a>
+												<a class="dropdown-item" href="#">212 Khương Đình, P. Hạ Đình, Q. Thanh Xuân</a>
+												<a class="dropdown-item" href="#">283 Hồ Tùng Mậu, P. Cầu Diễn, Q. Nam Từ Liêm</a>
+												<a class="dropdown-item" href="#">56/2B Nguyễn Ảnh Thủ, P. Trung Mỹ Tây, Q. 12</a>
+												<a class="dropdown-item" href="#">114 Phan Đăng Lưu, P. 3, Q. Phú Nhuận</a>
+												<a class="dropdown-item" href="#">A23/8, Ấp 1A, Quốc Lộ 50, X. Bình Hưng, H. Bình Chánh</a>
+												<a class="dropdown-item" href="#">543 Nguyễn Trãi, P. Thanh Xuân Nam, Q. Thanh Xuân</a>
+											</div>
+										</div>
+									</div>
+									<div class="store-dtv">
+										<div class="dropdown">
+											<button class="btn btn-primary dropdown-toggle" type="button" id="store-c" data-toggle="dropdown"
+												aria-haspopup="true" aria-expanded="false">
+												Xem hệ thống cửa hàng sửa chữa Điện Thoại Vui
+											</button>
+											<div class="dropdown-menu" aria-labelledby="about-us">
+												<a class="dropdown-item" href="#">546 Trương Định, P. Tân Mai, Q. Hoàng Mai - Ngã tư Tân Mai,
+													Trương Định</a>
+												<a class="dropdown-item" href="#">241-243, Đỗ Xuân Hợp, Phước Long B, Quận 9</a>
+												<a class="dropdown-item" href="#">1075B Hậu Giang, P. 11, Q. 6</a>
+												<a class="dropdown-item" href="#">248 Nguyễn Thị Thập, P. Tân Quy, Q. 7</a>
+												<a class="dropdown-item" href="#">212 Khương Đình, P. Hạ Đình, Q. Thanh Xuân</a>
+												<a class="dropdown-item" href="#">283 Hồ Tùng Mậu, P. Cầu Diễn, Q. Nam Từ Liêm</a>
+												<a class="dropdown-item" href="#">56/2B Nguyễn Ảnh Thủ, P. Trung Mỹ Tây, Q. 12</a>
+												<a class="dropdown-item" href="#">114 Phan Đăng Lưu, P. 3, Q. Phú Nhuận</a>
+												<a class="dropdown-item" href="#">A23/8, Ấp 1A, Quốc Lộ 50, X. Bình Hưng, H. Bình Chánh</a>
+												<a class="dropdown-item" href="#">543 Nguyễn Trãi, P. Thanh Xuân Nam, Q. Thanh Xuân</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>
+				© 2018. Công ty TNHH Thương mại và dịch vụ kỹ thuật Minh Nguyệt. GPDKKD: 0312289651 do sở KH &amp; ĐT TP.HCM cấp
+				ngày 22/05/2013. Địa chỉ: 363 Võ Văn Tần, phường 5, quận 3 . TP Hồ Chí Minh. Điện thoại: 028.7108.9666 . Email:
+				cskh@cellphones.com.vn. Chịu trách nhiệm nội dung: Nguyễn Anh Văn.
+			</p>
+		</div>
+	</footer>
+	<!-- End footer -->
+</body>
+
+</html>

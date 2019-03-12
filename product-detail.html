@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Product detail</title>
+
+	<!-- Jquery -->
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/jquery-3.3.1.min.js"></script>
+
+	<!-- Bootstrap 4 -->
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<script src="./js/popper.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+
+	<link href="./css/fontello.css" rel="stylesheet">
+	<link href="./css/font-awesome.min.css" rel="stylesheet" />
+
+	<!-- Slider -->
+	<link href="./css/flickity.css" rel="stylesheet" media="screen">
+	<script src="./js/flickity.min.js"></script>
+
+	<!-- Megamenu -->
+	<link href="./css/slider-menu.css" rel="stylesheet" type="text/css" />
+	<link href="./css/megamenu.css" rel="stylesheet" type="text/css" />
+	<script src="./js/jquery.menu-aim.js"></script>
+	<script src="./js/webslidemenu.js"></script>
+
+	<!-- Zoom -->
+	<script src="./js/jquery.elevatezoom.min.js"></script>
+
+	<!-- Custom -->
+	<link href="./css/style.css" rel="stylesheet">
+	
+
+</head>
+
+<body class="product-category-view">
+	<!-- Header -->
+	<header id="header">
+		<div class="header">
+			<div class="header-main">
+				<div class="wsmainfull clearfix">
+					<div class="wsmainwp clearfix">
+						<div class="float-left header-left">
+							<div class="float-left logo">
+								<a href="/" title="Demo - Hệ thống bán lẻ điện thoại">
+									<img src="./images/logo.jpg" alt="Demo - Hệ thống bán lẻ điện thoại"></a>
+							</div>
+							<div class="float-left x-search">
+								<div class="float-left" style="padding: 9px 0px;">
+									<div class="btn-group">
+										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+											aria-haspopup="true" aria-expanded="false" style="padding: 6px 5px 6px 8px !important;">
+											Hà Nội
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu">
+											<li>
+												<a href="#">
+													<i class="fa fa-map-marker"></i> Hà Nội
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fa fa-map-marker"></i> Hồ Chí Minh
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<form id="search_mini_form" action="" method="get">
+									<div class="form-search">
+										<label for="search">Search:</label>
+										<input id="search" type="text" name="q" value="" class="input-text" maxlength="128">
+										<button type="submit">
+											<i class="fa fa-search"></i>
+										</button>
+										<div id="search_autocomplete" class="search-autocomplete" style="display: none;"></div>
+									</div>
+								</form>
+							</div>
+
+						</div>
+
+						<div class="wsmobileheader clearfix ">
+							<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+						</div>
+
+						<!--Main Menu HTML Code-->
+						<nav class="wsmenu clearfix">
+							<div class="overlapblackbg"></div>
+							<ul class="wsmenu-list">
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-mobile fa-2x"></i>Điện thoại<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Apple</h3>
+														<ul>
+															<li><a href="#">iPhone XS</a></li>
+															<li><a href="#">iPhone XS Max</a></li>
+															<li><a href="#">iPhone XR</a></li>
+															<li><a href="#">iPhone X</a></li>
+															<li><a href="#">iPhone 8 | 8 Plus</a></li>
+															<li><a href="#">iPhone 7 | 7 Plus</a></li>
+															<li><a href="#">iPhone 6S | 6S Plus</a></li>
+														</ul>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Samsung</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Huawei</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Xiaomi</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">OPPO</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Nokia</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">ASUS</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Realme</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Vsmart</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Hãng khác</h3>
+														<ul>
+															<li><a href="#">Pocophone</a></li>
+															<li><a href="#">Honor</a></li>
+															<li><a href="#">BlackBerry</a></li>
+															<li><a href="#">BKAV Bphone</a></li>
+															<li><a href="#">Sharp</a></li>
+														</ul>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Tin đồn - Mới ra</h3>
+													</div>
+													<div class="col-md-4 col-sm-12">
+														<h3 class="title">Xem tất cả</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-tablet fa-2x"></i>Tablet<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad Pro</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad Air</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad 9.7</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad mini</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Huawei</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-refresh fa-2x"></i>Hàng cũ<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Apple</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad Air</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad 9.7</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad mini</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Huawei</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-refresh fa-2x"></i>Phụ kiện<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Apple</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad Air</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad 9.7</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad mini</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Huawei</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-music  fa-2x"></i>Đồ chơi<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Apple</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad Air</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad 9.7</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad mini</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Huawei</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-music  fa-2x"></i>Âm thanh<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Apple</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad Air</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad 9.7</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">iPad mini</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Huawei</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true">
+									<a href="#"><i class="fa fa-laptop fa-2x"></i>Laptop<span class="wsarrow"></span></a>
+									<div class="wsmegamenu clearfix">
+										<div class="typography-text clearfix">
+											<div class="container">
+												<div class="row">
+													<div class="cl"></div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">MacBook</h3>
+														<ul>
+															<li><a href="#">Macbook Pro 2018</a></li>
+															<li><a href="#">Macbook Air 2018</a></li>
+															<li><a href="#">MacBook 2017</a></li>
+															<li><a href="#">MacBook Pro 2017</a></li>
+															<li><a href="#">MacBook 2016</a></li>
+															<li><a href="#">MacBook Pro 2016</a></li>
+															<li><a href="#">MacBook Air 2017</a></li>
+														</ul>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">Dell</h3>
+													</div>
+													<div class="col-md-6 col-sm-12">
+														<h3 class="title">HP</h3>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li aria-haspopup="true"><a href="#"><i class="fa fa-gift fa-2x"></i>Trả góp<span
+											class="wsarrow"></span></a></li>
+								<li aria-haspopup="true"><a href="#"><i class="fa fa-gift fa-2x"></i>Sửa chữa<span
+											class="wsarrow"></span></a>
+									<ul class="sub-menu">
+										<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Website Design </a></li>
+										<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Ecommerce Solutions</a></li>
+										<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Application Development</a>
+										</li>
+										<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Website Development</a></li>
+										<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Open Source Development</a>
+											<ul class="sub-menu">
+												<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Submenu item 1</a></li>
+												<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Submenu item 2</a></li>
+												<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Submenu item 3</a></li>
+												<li aria-haspopup="true"><a href="#"><i class="fa fa-angle-right"></i>Submenu item 4</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li aria-haspopup="true"><a href="#"><i class="fa fa-gift fa-2x"></i>Khuyến mãi<span
+											class="wsarrow"></span></a></li>
+								<li aria-haspopup="true"><a href="#"><i class="fa fa-gift fa-2x"></i>Công nghệ<span
+											class="wsarrow"></span></a></li>
+								<li aria-haspopup="true"><a href="#"><i class="fa fa-gift fa-2x"></i>Ưu đãi đối tác<span
+											class="wsarrow"></span></a></li>
+
+							</ul>
+						</nav>
+						<!--Menu HTML Code-->
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</header>
+	<!-- End Header -->
+
+	<!--  main -->
+	<main id="main">
+	
+		<section class="awe-section-1 mb-2">
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+					<li class="home">
+						<a href="" title="Go to Home Page">Home</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li class="category3">
+						<a href="" title="">Điện thoại</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li class="category132">
+						<a href="" title="">Apple</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li class="category598">
+						<a href="" title="">iPhone chính hãng</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li class="category650">
+						<a href="" title="">iPhone 7 | 7 Plus Chính hãng</a>
+						<i class="fa fa-angle-right"></i>
+					</li>
+					<li class="product">Apple iPhone 7 Plus 32GB Chính hãng </li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		
+		<section class="awe-section-1 mb-2">
+			<div class="container">
+				<div class="product-detail">
+					<div class="topview">
+						<div class="page-title mb-4">
+							<h1 class="font-weight-bold">Apple iPhone 7 Plus 32GB Chính hãng<span class="font-weight-normal">(Mã VN/A)</span></h1>
+						</div>
+						<div class="likeshare">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-12 col-12">
+							<div class="product-img-detail">
+								<div class="carousel carousel-main mb-2 text-justify" data-flickity=''>
+								  <div class="carousel-cell">
+									<a href=""><img alt="" src="./images/image-product/iphone-7-plus-black_3_3_1_1.jpg"></a>
+								  </div>
+								  <div class="carousel-cell">
+									<a href=""><img alt="" src="./images/image-product/iphone-7-plus-gold_3_3_1_1.jpg"></a>
+								  </div>
+								  <div class="carousel-cell">
+									<a href=""><img alt="" src="./images/image-product/iphone-7-plus-red_11_1_1.jpg"></a>
+								  </div>
+								  <div class="carousel-cell">
+									<a href=""><img alt="" src="./images/image-product/iphone-7-plus-gold_3_3_1_1.jpg"></a>
+								  </div>
+								  <div class="carousel-cell">
+									<a href=""><img alt="" src="./images/image-product/iphone-7-plus-black_3_3_1_1.jpg"></a>
+								  </div>
+								</div>
+
+								<div class="carousel carousel-nav"
+								  data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
+								  <div class="carousel-cell mr-2">
+									<a><img alt="" src="./images/image-product/iphone-7-plus-black_3_3_1_1.jpg"></a>
+								  </div>
+								  <div class="carousel-cell mr-2">
+									<a><img alt="" src="./images/image-product/iphone-7-plus-gold_3_3_1_1.jpg"></a>
+								  </div>
+								  <div class="carousel-cell mr-2">
+									<a><img alt="" src="./images/image-product/iphone-7-plus-red_11_1_1.jpg"></a>
+								  </div>
+								  <div class="carousel-cell mr-2">
+									<a><img alt="" src="./images/image-product/iphone-7-plus-gold_3_3_1_1.jpg"></a>
+								  </div>
+								  <div class="carousel-cell mr-2">
+									<a><img alt="" src="./images/image-product/iphone-7-plus-black_3_3_1_1.jpg"></a>
+								  </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-12 col-12">
+							<div class="product-shop">
+								<div class="notice-tragop">
+									<a href=""><img src="https://cellphones.com.vn/media/wysiwyg/1200x200-2.png" alt="TRẢ GÓP DỄ DÀNG - LỘC VÀNG VỀ TAY" title="TRẢ GÓP DỄ DÀNG - LỘC VÀNG VỀ TAY"></a>
+								</div>
+								<div class="address-detail mt-2">
+									<p class="float-left"><b>Mua hàng từ:</b></p>
+									<div class="dropdown float-right mb-2">
+										<button class="btn btn-primary dropdown-toggle" type="button" id="store-a" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Hồ Chí Minh
+										</button>
+										<div class="dropdown-menu" aria-labelledby="about-us" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+											<a class="dropdown-item" href="#">Hà Nội</a>
+											<a class="dropdown-item" href="#">Hồ Chí Minh</a>
+										</div>
+									</div>
+								</div>
+								<div class="product-options-bottom">
+									<div class="float-left">
+										<div class="price-box">
+											<span class="regular-price" id="product-price-13822">
+											<span class="price">13.790.000&nbsp;₫</span></span> 
+										</div>
+									</div>
+									<div class="float-right" id="checkTraGop">
+										<a href=""> Trả góp 0% </a>
+									</div>
+								</div>
+								<div class="form-giam-gia f-left" id="box_promotion_child">
+									<div id="price_left" class="float-left">
+										<center>
+											<span class="font-weight-bold"> Giảm còn </span>
+										</center>
+									</div>
+									<div id="price_right" class="float-right">
+										<span class="font-weight-bold">13.100.000&nbsp;₫</span>
+										<br>(Không áp dụng trả góp 0% HomeCredit)
+									</div>
+								</div>
+								<div class="note">
+									<a href=""><span><em> Miễn phí giao hàng thu tiền ( COD free )</em> </span></a>
+								</div>
+								<div class="promotion_wrapper pt-2">
+									<b>
+										<i class="fa fa-gift" aria-hidden="true"></i> Khuyến mãi
+									</b>
+									<div class="khuyenmai-info p-2">
+										<h5>Chương trình khuyến mại:</h5>
+										<ul>
+											<li>
+												<a href="" rel="nofollow">[HOT] Lên đời iPhone chính hãng chỉ từ 0 đồng</a>
+											</li>
+										</ul>
+										<h5>Trả góp 0% HomeCredit:</h5>
+										<ul>
+											<li>
+												<a href="" rel="nofollow">Trả góp lãi suất 0% với Home Credit. Trả trước 40%, kỳ hạn 6 tháng (Áp dụng trên GIÁ NIÊM YẾT, không áp dụng cùng các khuyến mại khác)</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="note-sale"> 
+    
+									<p>* <a href="" title="giảm giá smember">Giảm tới</a>&nbsp;
+									<strong>
+										<span style="color: #ff0000;">1%</span>
+									</strong>&nbsp;giá hóa đơn,
+									<span style="color: #ff0000;">
+										<strong></strong>
+									</span>
+									<strong>
+										<span style="color: #ff0000;">10%</span>
+									</strong>&nbsp;giá bao da, ốp, miếng dán
+									<p> 
+									<p>* <a href="" title="ưu đãi trả góp">Trả góp&nbsp;
+										<span style="color: #ff0000;">
+											<strong>0%</strong>
+										</span>
+									</a> với thẻ tín dụng ngân hàng (tối thiểu 3 triệu)
+									</p> 
+									<p>* <em>Miễn phí cà thẻ (ngoại trừ AMEX, UnionPay &amp; JCB)</em></p>
+									
+								</div>
+								<div class="product-options" id="product-options-wrapper">
+									<div class="swatch-attr">
+										<label id="color_label" class="required">
+											<strong>
+												<i class="select_color_title">Chọn màu để xem giá và chi nhánh có hàng</i>
+											</strong>
+											<span id="select_label_color" class="select-label"></span>
+										</label>
+									</div>
+									<div class="clearfix swatch-attr" id="myid">
+										<div class="row">
+											<div class="col-md-4 col-sm-4 col-6">
+												<div class="btn mb-2"><a>
+													<span class="opt-name">Bạc</span>
+													<span class="opt-price">13.790.000&nbsp;₫</span>
+												</a></div>
+											</div>
+											<div class="col-md-4 col-sm-4 col-6">
+												<div class="btn mb-2"><a>
+													<span class="opt-name">Gold 
+														<span class="fa fa-check"></span>
+													</span>
+													<span class="opt-price">13.790.000&nbsp;₫</span>
+												</a></div>
+											</div>
+											<div class="col-md-4 col-sm-4 col-6">
+												<div class="btn mb-2"><a>
+													<span class="opt-name">Hồng</span>
+													<span class="opt-price">13.790.000&nbsp;₫</span>
+												</a></div>
+											</div>
+											<div class="col-md-4 col-sm-4 col-6">
+												<div class="btn mb-2 active"><a>
+													<span class="opt-name">Đen 
+														<span class="fa fa-check"></span>
+													</span>
+													<span class="opt-price">13.790.000&nbsp;₫</span>
+												</a></div>
+											</div>
+											<div class="col-md-4 col-sm-4 col-6">
+												<div class="btn mb-2"><a>
+													<span class="opt-name">Đen bóng</span>
+													<span class="opt-price">13.790.000&nbsp;₫</span>
+												</a></div>
+											</div>
+											<div class="col-md-4 col-sm-4 col-6">
+												<div class="btn mb-2"><a>
+													<span class="opt-name">Đỏ</span>
+												</a></div>
+											</div>
+										</div>
+									</div>
+
+									
+								</div>
+								<p class="ecommerce-note pl-5">
+									<a href=""><strong>CÓ THỂ THANH TOÁN ONLINE</strong></a>
+								</p>
+								<div class="button-cart">
+									<a class="big-button button-red left" onclick="addToCart()">
+										<strong>MUA NGAY</strong>
+										<br>
+										(Giao tận nơi hoặc lấy tại cửa hàng)
+									
+									</a>
+									<a class="float-left big-button button-blue" onclick="addToCart()" >
+										<strong>TRẢ GÓP</strong>
+										<br>
+										(Home, Fe Credit, HDSaison)
+									
+									</a>
+									<a class=" float-right big-button button-blue" onclick="tragop()">
+										<strong>TRẢ GÓP 0% QUA THẺ</strong>
+										<br>
+										(Visa, Master Card, JCB)
+									
+									</a>
+								</div>
+								<div class="contact-free">
+									Gọi miễn phí: 
+									<b>1800.2097</b> | 
+									<a href="">Chat với tư vấn viên</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-12 col-12">
+							<div class="contact-shop">
+								<h6><b>Hiện 19 cửa hàng có sẵn sản phẩm</b></h6>
+								<div class="lt-cua-hang">
+									<ul>
+										<li>177 Khánh Hội, P. 3, Q. 4</li>
+										<li>4B Cộng Hoà, P. 4, Q. Tân Bình</li>
+										<li>672-674 Âu Cơ, P. 14, Q. Tân Bình</li>
+										<li>59 Quang Trung, P. 10, Q. Gò Vấp</li>
+										<li>288 Đường 3/2, P. 12, Q. 10</li>
+										<li>157-159 Nguyễn Thị Minh Khai, P. Phạm Ngũ Lão, Q. 1</li>
+										<li>241-243, Đỗ Xuân Hợp, Phước Long B, Quận 9</li>
+										<li>1075B Hậu Giang, P. 11, Q. 6</li>
+										<li>248 Nguyễn Thị Thập, P. Tân Quy, Q. 7</li>
+										<li>56/2B Nguyễn Ảnh Thủ, P. Trung Mỹ Tây, Q. 12</li>
+										<li>114 Phan Đăng Lưu, P. 3, Q. Phú Nhuận</li>
+										<li>A23/8, Ấp 1A, Quốc Lộ 50, X. Bình Hưng, H. Bình Chánh</li>
+										<li>37-39 Võ Văn Ngân, P. Linh Chiểu, Q. Thủ Đức</li>
+										<li>125 Lê Văn Việt, P. Hiệp Phú, Q. 9</li>
+										<li>55B Trần Quang Khải, P. Tân Định, Q. 1</li>
+										<li>536 Xô Viết Nghệ Tĩnh, P. 25, Q. Bình Thạnh</li>
+										<li>136 Nguyễn Thái Học, P. Phạm Ngũ Lão, Q. 1</li>
+										<li>363 Võ Văn Tần, P. 5, Q. 3</li>
+										<li>5 Nguyễn Kiệm, P. 3, Q. Gò Vấp</li>
+									</ul>
+									<button class="all-shop mt-2">Xem thêm cửa hàng gần nhất<i class="fa fa-angle-down pl-1"></i></button>
+								</div>								
+								<div class="mt-2 produc-pk">
+									<p class="mb-1"><b>Tình trạng</b></p>
+									<span>Nguyên hộp, đầy đủ phụ kiện từ nhà sản xuất</span>
+								</div>
+								<div class="mt-2 produc-bh">
+									<p class="mb-1"><b>Bảo hành</b></p>
+									<span>Bảo hành 12 tháng tại trung tâm bảo hành Chính hãng. 1 đổi 1 trong 30 ngày nếu có lỗi nhà sản xuất.</span><a href="" style="color:red">(Chi tiết)</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-9 col-sm-12">
+							<div class="blog-content height" id="blogid">
+								<h2 class="font-weight-bold">
+									<a href="" title="" target="_blank">Điện thoại iPhone 7 Plus 32GB chính hãng VN/A</a>
+								</h2>
+								<p>
+									<em>
+										<a href="" title="điện thoại iphone" target="_blank">
+											<strong>Apple iPhone</strong>
+										</a> là một trong những dòng Smartphone luôn được mọi người săn đón, đó là một thành công của hãng. 
+										<strong>
+											<a href="" title="" target="_blank">iPhone 7 Plus</a>
+										</strong> là một trong những smartphone mang lại thành công to lớn đó cho Apple. Sức hút của sản phẩm vẫn không hề giảm mặc dù trên thị trường có hàng loạt các dòng smartphone cao cấp khác.
+									</em>
+								</p>
+								<p align="center">
+									<img alt="" src="">
+								</p>
+								<h3><b>Thiết kế khung kim loại nguyên khối sang trọng và tinh tế</b></h3>
+								<p>Iphone 7 Plus 32GB&nbsp;với kích thước&nbsp;158.2 x 77.9 x 7.3 mm mỏng nhẹ và&nbsp;thiết kế tương tự như bộ đôi&nbsp;iPhone 6s/6s Plus, tuy nhiên phần dải nhựa bắt sóng không cắt ngang mặt lưng như phiên bản cũ mà được chuyển sang phần cạnh trên của sản phẩm.</p>
+								<p align="center">
+									<img alt="iPhone 7 Plus 32GB chính hãng VN/A" src="https://cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-7-Plus-32GB-Chinh-Hang-vna-2.jpg">
+								</p>
+								<p>Phím Home trên điện thoại cũng được thay thế bằng phím cảm ứng nhờ vào sự kết hợp&nbsp;Taptic Engine mới liên kết với&nbsp;3D Touch&nbsp;tiện lợi và đẹp mắt. Các phím vật lý được Apple bố trí tương tự như 6s Plus. Cụ thể, cạnh trái là nút gạt rung và tăng giảm âm lượng. Cạnh phải là nút nguồn và khe sim, iphone 7 Plus vẫn sử dụng 1 sim như các sản phẩm tiền nhiệm. Cạnh dưới gồm có 2 dãy loa, cổng kết nối linghtning, máy đã loại bỏ hoàn toàn jack cắm 3.5mm.</p>
+								<p align="center">
+									<img alt="iPhone 7 Plus 32GB chính hãng VN/A 2" src="https://cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-7-Plus-32GB-Chinh-Hang-vna-3.jpg">
+								</p>
+								<p>iPhone 7 Plus có tới 6 màu sắc đa dạng để cho người dùng lựa chọn. Đó là các màu: Đen bóng, đen nhám, màu bạc, màu vàng hồng, màu vàng và màu đỏ. Mỗi màu một cá tính, trong đó có màu chưa từng xuất hiện bao giờ trên các sản phẩm của Apple thì nay lại coa mặt trên iphone 7 Plus.</p>
+								<p align="center">
+									<img alt="iPhone 7 Plus 32GB chính hãng VN/A 3" src="https://cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-7-Plus-32GB-Chinh-Hang-vna-4.jpg">
+								</p>
+								<h3><b>Hiệu năng mạnh mẽ vượt trội với chip Apple A10</b></h3>
+								<p>iPhone 7 Plus được nâng cấp lên chip xử lý A10 cho hiệu suất hoạt động hơn 40% A9 và gấp đôi A8. Điện thoại được trang bị RAM 3GB, bộ nhớ trong 32GB không có thẻ nhớ hỗ trợ. Qua quá trình trải nghiệm, iphone 7 Plus cho thấy khả năng chạy mượt mà trên hầu hết các ứng dụng, cũng như game có đồ họa nặng. Do sử dụng hệ điều hành iOS 10 với các tính năng mới nhất, nên iphone 7 Plus chắc chắn sẽ cho bạn những trải nghiệm tuyệt vời nhất.</p>
+								<p align="center">
+									<img alt="iPhone 7 Plus 32GB chính hãng VN/A 4" src="https://cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-7-Plus-32GB-Chinh-Hang-vna-5.jpg">
+								</p>
+								<p>Đặc biệt, iPhone 7 Plus còn hỗ trợ tai nghe không dây, được bán riêng với sản phẩm. Tai nghe kết nối với iPhone bằng một kết nối phát triển riêng bởi Apple nên cho chất lượng âm thanh cực chuẩn.</p>
+								<h2>Màn hình Retina HD&nbsp;5.5 inches với&nbsp;không gian rộng và tích hợp 3D Touch</h2>
+								<p>iPhone 7&nbsp;Plus&nbsp;sở hữu&nbsp;màn hình Retina HD 5.5 inches có độ phân giải&nbsp;1080 x 1920 pixels. Công nghệ màn hình này&nbsp;mang đến khả năng hiển thị màu sắc tương tự như các iphone đời trước, màn hình hiển thị rực rỡ, sống động và mang lại cho bạn trải nghiệm hình ảnh ấn tượng. Ngoài ra, màn hình được tích hợp&nbsp;tích hợp công nghệ 3D Touch, giúp máy vận hành nhanh chóng hơn khi bạn tương tác với màn hình để sử dụng các ứng dụng tin nhắn, mail, lịch,...</p>
+								<p align="center">
+									<img alt="iPhone 7 Plus 32GB chính hãng VN/A 5" src="https://cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-7-Plus-32GB-Chinh-Hang-vna-6.jpg">
+								</p>
+								<h3><b>Camera kép đầu tiên của Apple cho khả năng chụp ảnh ấn tượng</b></h3>
+								<p>Đây có thể xem là một điểm đáng chú ý nhất, đối với chiếc siêu phẩm này. Apple iPhone 7 Plus&nbsp;sở hữu ba camera, với 2 camera chính ở phía sau có cùng có độ phân giải 12MP và một camera selfie 7MP ở mặt trước.</p>
+								<p align="center">
+									<img alt="iPhone 7 Plus 32GB chính hãng VN/A 6" src="https://cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-7-Plus-32GB-Chinh-Hang-vna-7.jpg">
+								</p>
+								<p>Bộ đôi camera kép 12MP giúp bạn có thể chụp hình với góc rộng và có thể zoom ảnh từ xa với chất lượng cao. Cũng nhờ hệ thống dual-camera và công nghệ ISP bước đột phá trên iPhone 7 Plus, bạn có thể chụp được những bức ảnh và quay video cận cảnh với zoom quang học 2x. Theo đó, camera trên 7 Plus có góc chụp rộng, thu được nhiều chi tiết hơn, màu sắc trung thực hơn. Camera kép của apple cho phép xóa phông rất tốt, giúp tạo ra bức ảnh với chất lượng tốt nhất, sắc nét và chi tiết cao. Nhờ có 1 camera có khẩu độ f/1.8 có hỗ trợ chống rung quang học OIS nên cho khả năng chụp ảnh chất lượng và nhanh chóng. Một camera còn lại có khẩu độ f/2.8 nên khả năng chụp trong điều kiện thiếu sáng khá tốt, hình không bị mờ hay nhòe, không bị noi khi zoom lớn. Ngoài ra, hãng còn trang bị thêm đèn flash LED 4 tông màu hỗ trợ. Đồng thời, camera iphone 7 Plus còn cho khả năng quay phim 4K cực sắc nét.</p>
+								<p align="center">i
+									<img alt="iPhone 7 Plus 32GB Chính hãng 6" src="https://cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-7-Plus-32GB-Chinh-Hang-vna-9.jpg">
+								</p>
+								<p>Ngoài ra, khi sử dụng thiết bị để chụp ảnh chân dung,&nbsp;hệ thống dual-camera sẽ mang đến hiệu ứng bokeh (thường có ở&nbsp;máy ảnh DSLR) mang đến hình ảnh chủ thể sắc nét và nền được làm mờ để tạo độ sâu. Nhờ vậy, iphone 7 Plus mang đến hình ảnh tuyệt đẹp.</p>
+								<p align="center">
+									<img alt="iPhone 7 Plus 32GB Chính hãng 7" src="https://cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-7-Plus-32GB-Chinh-Hang-vna-9.jpg">
+								</p>
+								<p>Camera phụ ở mặt trước điện thoại với độ phân giải 7MP. Được trang bị cùng là công nghệ&nbsp;Retina flash phù hợp với ánh sáng xung quanh. Công nghệ này mang đến bạn bức ảnh với tông màu da tự nhiên và đẹp mắt. Bạn có thể thỏa sức selfie hoặc gọi video với bạn bè, người thân một cách nhanh chóng và tiện lợi.</p>
+								<h3><b>Đạt tiêu chuẩn chống nước IP 67</b></h3>
+								<p>iPhone 7 Plus&nbsp;được thiết kế có khả năng chịu được nước và bụi. Với tiêu chuẩn chống nước IP67, điện thoại của bạn có thể an toàn dưới nước ở độ sâu 1m trong khoảng thời gian 30 phút mà không bị ảnh hưởng hay hư hỏng. Bạn sẽ yên tâm sử dụng điện thoại khi trời mưa mà không sợ hỏng hóc. Không sợ hư hỏng khi lỡ tay làm đổ nước lên điện thoại của bạn. Khả năng chống bụi cũng tuyệt vời không kém, sản phẩm được gia công mịn màng không bám bụi và hạn chế bám dính mồi hôi vân tay.</p>
+								<p align="center">
+									<img alt="iPhone 7 Plus 32GB Chính hãng 8" src="https://cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-7-Plus-32GB-Chinh-Hang-vna-10.jpg">
+								</p>
+								<h3><b>Loa kép cân đối, âm thanh sống động</b></h3>
+								<p>Iphone 7 Plus là dòng sản phẩm đã loại bỏ hoàn toàn Jack 3.5. Thế nhưng, không có nghĩ là khả năng nghe nhạc của nó kém đi. Mà ngược lại, khả năng âm thanh của sản phẩm được nâng cấp lên một tầng cao mới. Điện thoại iPhone&nbsp;7 Plus&nbsp;được trang bị loa kép stereo, mang đến phạm vi hoạt động rộng và chất lượng âm thanh gấp 2 lần iPhone 6s. Hệ thống loa kép giúp bạn có thể nghe nhạc, xem phim, thực hiện cuộc gọi bằng loa ngoài một cách tiện lợi và&nbsp;sống động.</p>
+								<p align="center">
+									<img alt="iPhone 7 Plus 32GB Chính hãng 9" src="https://cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-7-Plus-32GB-Chinh-Hang-vna-11.jpg">
+								</p>
+								<p>iPhone 7 Plus&nbsp;hỗ trợ thiết bị&nbsp;tai nghe không dây AirPods, được kết nối qua công nghê riêng của apple. Bạn chỉ cần thao tác đơn giản, kết nối thiết bị và đặt trong tai để sử dụng. Thiết bị này cực kỳ thích hợp cho những bạn thích đơn giản và tiện dụng. Ngoài ra, bạn cũng có thể nghe nhạc qua cổng lightning.</p>
+								<p align="center">
+									<img alt="iPhone 7 Plus 32GB Chính hãng 10" src="https://cellphones.com.vn/media/wysiwyg/mobile/apple/iphone-7-Plus-32GB-Chinh-Hang-vna-12.jpg">
+								</p>
+								<h3><b>Đến CellphoneS để mua ngay iphone 7 Plus chính hãng giá tốt nhất</b></h3>
+								<p>Sản phẩm iPhone 7 Plus được CellphoneS phân phối là sản phẩm chính hãng được apple sản xuất dành riêng cho thị trường Việt Nam. Vì thế, sản phẩm này được hỗ trợ bảo hành 12 tháng tại các hệ thống bảo hành ủy quyền của apple trên toàn quốc. Ngoài ra, khi mua sản phẩm này tại CellphoneS, bạn còn được hỗ trợ đổi mới 1 đổi 1 trong vòng 30 ngày nếu có lỗi từ nhà sản xuất. Ở CellphoneS, bạn có thể mua hàng tại cửa hàng hoặc mua online để được giao hàng tận nơi và nhận được sự hỗ trợ nhiệt tình.</p>
+							</div>
+							<button class="button_readmore p-2">Xem thêm đánh giá <i class="fa fa-angle-down"></i></button>
+
+							<div class="video-lien-quan">
+								<h3 class="font-weight-bold mb-2">Các video đánh giá sản phẩm</h3>
+								<div class="row">
+									<div class="col-md-3 col-sm-3 col-6">
+										<div class="video-item">
+											<div class="img-section">
+												<a href="" data-featherlight="iframe" data-featherlight-iframe-allowfullscreen="true" data-featherlight-iframe-width="500" data-featherlight-iframe-height="281">
+													<img src="https://img.youtube.com/vi/_IHrZYT8CCw/mqdefault.jpg">
+												</a>
+											</div>
+											<div class="info-section p-2">
+												<h4>ĐÁNH GIÁ iPHONE 7 PLUS SAU 1 NĂM SỬ DỤNG! - 2018 CÓ NÊN MUA???</h4>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-3 col-6">
+										<div class="video-item">
+											<div class="img-section">
+												<a href="" data-featherlight="iframe" data-featherlight-iframe-allowfullscreen="true" data-featherlight-iframe-width="500" data-featherlight-iframe-height="281">
+													<img src="https://img.youtube.com/vi/_IHrZYT8CCw/mqdefault.jpg">											
+												</a>
+											</div>
+											<div class="info-section p-2">
+												<h4>ĐÁNH GIÁ iPHONE 7 PLUS SAU 1 NĂM SỬ DỤNG! - 2018 CÓ NÊN MUA???</h4>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-3 col-6">
+										<div class="video-item">
+											<div class="img-section">
+												<a href="" data-featherlight="iframe" data-featherlight-iframe-allowfullscreen="true" data-featherlight-iframe-width="500" data-featherlight-iframe-height="281">
+													<img src="https://img.youtube.com/vi/_IHrZYT8CCw/mqdefault.jpg">
+												</a>
+											</div>
+											<div class="info-section p-2">
+												<h4>ĐÁNH GIÁ iPHONE 7 PLUS SAU 1 NĂM SỬ DỤNG! - 2018 CÓ NÊN MUA???</h4>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-3 col-6">
+										<div class="video-item">
+											<div class="img-section">
+												<a href="" data-featherlight="iframe" data-featherlight-iframe-allowfullscreen="true" data-featherlight-iframe-width="500" data-featherlight-iframe-height="281">
+													<img src="https://img.youtube.com/vi/_IHrZYT8CCw/mqdefault.jpg">
+												</a>
+											</div>
+											<div class="info-section p-2">
+												<h4>ĐÁNH GIÁ iPHONE 7 PLUS SAU 1 NĂM SỬ DỤNG! - 2018 CÓ NÊN MUA???</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-12">
+									<h4 class="title-sp mb-2 mt-2"><span class="font-weight-normal">Sản phẩm</span>: Apple iPhone 7 Plus 32GB Chính hãng</h4>
+									<div class="product-options-bottom">
+										<div class="float-left">
+											<div class="price-box">
+												<span class="regular-price" id="product-price-13822">
+												<span class="price">13.790.000&nbsp;₫</span></span> 
+											</div>
+										</div>
+										<div class="float-right" id="checkTraGop">
+											<a href=""> Trả góp 0% </a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 col-12">
+									<div class="button-cart">
+										<a class="big-button button-red left" onclick="addToCart()">
+											<strong>MUA NGAY</strong>
+											<br>
+											(Giao tận nơi hoặc lấy tại cửa hàng)
+										
+										</a>
+										<a class="float-left big-button button-blue" onclick="addToCart()">
+											<strong>TRẢ GÓP</strong>
+											<br>
+											(Home, Fe Credit, HDSaison)
+										
+										</a>
+										<a class=" float-right big-button button-blue" onclick="tragop()">
+											<strong>TRẢ GÓP 0% QUA THẺ</strong>
+											<br>
+											(Visa, Master Card, JCB)
+										
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="comment_box pt-2 mt-2">
+								<div class="comment_info mb-2">
+									<span class="totalcomment" id="total_comment">
+										<b>Hỏi và đáp (142 Bình luận)</b>
+									</span>
+								</div>
+								<div class="form-add">
+									<div class="main_form">
+										<textarea class="form-control" name="detail" id="review_field" cols="5" rows="5" placeholder="Xin mời để lại câu hỏi, CellphoneS sẽ trả lời trong 30 phút từ 8h - 22h mỗi ngày." onfocus="comment.backToMainCmt()"></textarea>
+										<div class="user_action_wrap">
+											<div class="cmt_left float-left">
+												<a href="#" class="poli" rel="nofollow">Quy định đăng bình luận</a>
+											</div>
+											<div class="cmt_right float-right">
+												<a class="button" href="javascript:void(0)" id="btnSendCmt" onclick="comment.sendCmt();">Gửi</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="comment_wrap"></div>
+							</div>
+
+						</div>
+						<div class="col-md-3 col-sm-12 pl-sm-0">
+							<div class="lt-table-box technical-info product-stick">
+							<div class="stick-add-to">
+								<div class="header-technical">
+									<h2 class="font-weight-bold">Thông số kỹ thuật</h2>
+								</div>
+								<div class="content-technical height_r p-2">
+									<table>
+										<tbody>
+											<tr itemprop="brand" itemscope="" itemtype="">
+												<td>Hãng sản xuất</td>
+												<td itemprop="name">Apple</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>3G</td>
+												<td>HSPA 42.2/5.76 Mbps, EV-DO Rev.A 3.1 Mbps</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>4G</td>
+												<td>LTE-A (3CA) Cat9 450/50 Mbps</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>Kích thước</td>
+												<td>158.2 x 77.9 x 7.3 mm (6.23 x 3.07 x 0.29 in)</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>Trọng lượng</td>
+												<td>188 g (6.63 oz)</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>Loại SIM</td>
+												<td>Nano-SIM</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>Loại màn hình</td>
+												<td>Cảm ứng điện dung LED-backlit IPS LCD, 16 triệu màu</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>Kích thước màn hình</td>
+												<td>5.5 inches</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>Độ phân giải màn hình</td>
+												<td>1080 x 1920 pixels</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>Hệ điều hành</td>
+												<td>iOS</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>Phiên bản hệ điều hành</td>
+												<td>11</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>Chipset</td>
+												<td>Apple A10 Fusion APL1W24</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>CPU</td>
+												<td>2x 2.34 GHz Hurricane &amp; 2x 2.34 GHz Zephyr</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>GPU</td>
+												<td>PowerVR Series7XT Plus (6 lõi đồ họa)</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>Khe cắm thẻ nhớ</td>
+												<td>Không</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>Bộ nhớ đệm / Ram</td>
+												<td>32 GB, 3 GB RAM</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>Bộ nhớ trong</td>
+												<td>32 GB</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>Camera sau</td>
+												<td>12 MP (f/1.8, 28mm, 1/3", OIS) + 12 MP (f/2.8, 56mm, 1/3.6"), tự động lấy nét nhận diện theo giai đoạn, 2x zoom quang học, 4 LED flash (2 tone)</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>Camera trước</td>
+												<td>7 MP (f/2.2, 32mm), 1080p@30fps, 720p@240fps, nhận diện khuôn mặt, HDR</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>Quay video</td>
+												<td>2160p@30fps, 1080p@30/60/120fps, 720p@240fps</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>WLAN</td>
+												<td>Wi-Fi 802.11 a/b/g/n/ac, dual-band, hotspot</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>Bluetooth</td>
+												<td>4.2, A2DP, LE</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>GPS</td>
+												<td>A-GPS, GLONASS, GALILEO, QZSS</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>NFC</td>
+												<td>Yes</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>USB</td>
+												<td>2.0</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>Cảm biến</td>
+												<td>Vân tay, gia tốc, la bàn, khoảng cách, con quay quy hồi, phong vũ biểu</td>
+											</tr>
+											<tr style="display: table-row;">
+												<td>Pin</td>
+												<td>Li-ion 2900 mAh</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<button class="button_readmore_r p-2">Xem thêm</button>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="./js/custom.js" type="text/javascript"></script>
+	</main>
+	<!-- End main -->
+
+	<!-- footer -->
+	<footer id="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 mb-5 mb-sm-0">
+						<div class="footer-x">
+							<h3>Thông tin liên lạc</h3>
+							<div class="footer-content">
+								<p>Gọi mua hàng: <span style="font-size: large; color: #ff0000;"><strong><a href="tel:18002097"
+												onclick="actionFn('click-hotline')"><span style="color: #ff0000;">1800.<span
+														style="font-size: x-large;">2097</span></span></a></strong></span><span
+										style="color: #ff0000;"><span style="font-size: large; color: #ff0000;"><strong>&nbsp;<span
+													style="color: #000000;">(Miễn phí)</span></strong></span></span></p>
+								<p>Khiếu nại, góp ý: <a href="tel:18002063"><strong>1800.2063</strong></a></p>
+								<p>Thời gian phục vụ: <strong><em>8h - 22h</em></strong></p>
+								<p>Email: cskh@cellphones.com.vn</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12 mb-5 mb-sm-0">
+						<div class="footer-x">
+							<h3>Thông tin liên lạc</h3>
+							<div class="footer-content">
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<p>Giới thiệu</p>
+										<p>Tin công nghệ Sforum </p>
+										<p>Tra điểm Smember</p>
+										<p>Chính sách Bảo hành</p>
+										<p>Mua hàng từ xa</p>
+										<p>Tuyển dụng</p>
+										<p>Mua hàng - thanh toán Online</p>
+									</div>
+									<div class="col-md-6 col-sm-6 pl-md-0">
+										<p>Bán hàng Doanh nghiệp</p>
+										<p>Kiểm tra bảo hành - sửa chữa</p>
+										<p>Quy định về việc sao lưu dữ liệu</p>
+										<p>Chính sách bảo mật</p>
+										<p>Chính sách sử dụng</p>
+										<p>Hướng dẫn huỷ giao dịch, đổi trả</p>
+										<p>Trung tâm bảo hành chính hãng</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<div class="footer-x">
+							<h3>Hệ thống cửa hàng trên toàn quốc</h3>
+							<div class="footer-content">
+								<div class="lt-store">
+									<div class="dropdown">
+										<button class="btn btn-primary dropdown-toggle" type="button" id="store-a" data-toggle="dropdown"
+											aria-haspopup="true" aria-expanded="false">
+											Hồ Chí Minh
+										</button>
+										<div class="dropdown-menu" aria-labelledby="about-us">
+											<a class="dropdown-item" href="#">Hà Nội</a>
+											<a class="dropdown-item" href="#">Hồ Chí Minh</a>
+										</div>
+									</div>
+									<div class="store-cps">
+										<div class="dropdown">
+											<button class="btn btn-primary dropdown-toggle" type="button" id="store-b" data-toggle="dropdown"
+												aria-haspopup="true" aria-expanded="false">
+												Xem hệ thống cửa hàng bán lẻ CellphoneS
+											</button>
+											<div class="dropdown-menu" aria-labelledby="about-us">
+												<a class="dropdown-item" href="#">546 Trương Định, P. Tân Mai, Q. Hoàng Mai - Ngã tư Tân Mai,
+													Trương Định</a>
+												<a class="dropdown-item" href="#">241-243, Đỗ Xuân Hợp, Phước Long B, Quận 9</a>
+												<a class="dropdown-item" href="#">1075B Hậu Giang, P. 11, Q. 6</a>
+												<a class="dropdown-item" href="#">248 Nguyễn Thị Thập, P. Tân Quy, Q. 7</a>
+												<a class="dropdown-item" href="#">212 Khương Đình, P. Hạ Đình, Q. Thanh Xuân</a>
+												<a class="dropdown-item" href="#">283 Hồ Tùng Mậu, P. Cầu Diễn, Q. Nam Từ Liêm</a>
+												<a class="dropdown-item" href="#">56/2B Nguyễn Ảnh Thủ, P. Trung Mỹ Tây, Q. 12</a>
+												<a class="dropdown-item" href="#">114 Phan Đăng Lưu, P. 3, Q. Phú Nhuận</a>
+												<a class="dropdown-item" href="#">A23/8, Ấp 1A, Quốc Lộ 50, X. Bình Hưng, H. Bình Chánh</a>
+												<a class="dropdown-item" href="#">543 Nguyễn Trãi, P. Thanh Xuân Nam, Q. Thanh Xuân</a>
+											</div>
+										</div>
+									</div>
+									<div class="store-dtv">
+										<div class="dropdown">
+											<button class="btn btn-primary dropdown-toggle" type="button" id="store-c" data-toggle="dropdown"
+												aria-haspopup="true" aria-expanded="false">
+												Xem hệ thống cửa hàng sửa chữa Điện Thoại Vui
+											</button>
+											<div class="dropdown-menu" aria-labelledby="about-us">
+												<a class="dropdown-item" href="#">546 Trương Định, P. Tân Mai, Q. Hoàng Mai - Ngã tư Tân Mai,
+													Trương Định</a>
+												<a class="dropdown-item" href="#">241-243, Đỗ Xuân Hợp, Phước Long B, Quận 9</a>
+												<a class="dropdown-item" href="#">1075B Hậu Giang, P. 11, Q. 6</a>
+												<a class="dropdown-item" href="#">248 Nguyễn Thị Thập, P. Tân Quy, Q. 7</a>
+												<a class="dropdown-item" href="#">212 Khương Đình, P. Hạ Đình, Q. Thanh Xuân</a>
+												<a class="dropdown-item" href="#">283 Hồ Tùng Mậu, P. Cầu Diễn, Q. Nam Từ Liêm</a>
+												<a class="dropdown-item" href="#">56/2B Nguyễn Ảnh Thủ, P. Trung Mỹ Tây, Q. 12</a>
+												<a class="dropdown-item" href="#">114 Phan Đăng Lưu, P. 3, Q. Phú Nhuận</a>
+												<a class="dropdown-item" href="#">A23/8, Ấp 1A, Quốc Lộ 50, X. Bình Hưng, H. Bình Chánh</a>
+												<a class="dropdown-item" href="#">543 Nguyễn Trãi, P. Thanh Xuân Nam, Q. Thanh Xuân</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>
+				© 2018. Công ty TNHH Thương mại và dịch vụ kỹ thuật Minh Nguyệt. GPDKKD: 0312289651 do sở KH &amp; ĐT TP.HCM cấp
+				ngày 22/05/2013. Địa chỉ: 363 Võ Văn Tần, phường 5, quận 3 . TP Hồ Chí Minh. Điện thoại: 028.7108.9666 . Email:
+				cskh@cellphones.com.vn. Chịu trách nhiệm nội dung: Nguyễn Anh Văn.
+			</p>
+		</div>
+	</footer>
+	<!-- End footer -->
+</body>
+
+</html>
